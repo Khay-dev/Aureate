@@ -70,7 +70,7 @@ const Navbar = () => {
 						<Image src={"/logo.svg"} alt={"logo"} width={140} height={34}/>
 							</Link>
 						</div>
-						<nav className="hidden md:flex items-center gap-x-40">
+						<nav className="hidden md:flex items-center gap-x-36">
 							{menu.map((item) => (
 								<div className="group relative " key={item.title}>
 									<Link
