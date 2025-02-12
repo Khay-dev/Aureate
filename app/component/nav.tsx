@@ -91,7 +91,7 @@ const Navbar = () => {
 					<div
 						className={`${
 							isExiting ? "animate-slideRight" : "animate-slideLeft"
-						} fixed bg-black top-[60px] h-screen py-8 px-5 flex flex-col items-end md:hidden w-full z-40`}
+						} fixed bg-[#28293E]  top-[60px] h-screen py-8 px-5 flex flex-col items-end md:hidden w-full z-40`}
 					>
 						{menu.map((item) => (
 							<Link
