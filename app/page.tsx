@@ -1,101 +1,87 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+	return (
+		<main className="bg-[#FDF0E9]">
+			{/* Hero Section */}
+			<section className="bg-[#28293E] text-white xl:min-h-screen md:min-h-[60vh]  flex justify-between items-center px-5 xl:px-[80px] md:px-[40px] xl:pt-24 md:pt-24 lg:pt-36 xl:pb-5 lg:pb-10 md:pb-5 w-full sm:px-2">
+				<div className="basis-[50%] flex flex-col gap-y-8  ">
+					<p className="xl:text-[72px] lg:text-[60px] md:text-[45px] font-extrabold leading-[80px] tracking-[-2px] text-white relative">
+						<span className="z-20 relative">
+							We’ll Help <br /> To Build Your <br /> Dream Project
+						</span>
+						<Image
+							src="/Star.svg"
+							alt="icon"
+							width={140}
+							height={140}
+							className="absolute bottom-[130px] xl:left-[300px] md:left-[160px] lg:left-[240px]"
+						/>
+					</p>
+					<p className="text-base font-normal leading-8 lg:w-[80%] md:w-[90%]">
+						Our agency provides a plethora of services including Brand
+						management, design, Social media marketing, etc.
+					</p>
+					<div className="flex gap-x-8 items-center">
+						<Link
+							href={"/contact"}
+							className="text-sm font-black items-center text-[#eeeeee] uppercase  w-[138px] h-[48px] md:flex  justify-center bg-[#FF6600] rounded-[6px] "
+						>
+							HOW WE WORK
+						</Link>
+						<Link href={"/contact"} className="font-normal text-base leading-8">
+							{" "}
+							Contact Us
+						</Link>
+					</div>
+				</div>
+				<div className="basis-[45%]">
+					<Image
+						src={"/hero.png"}
+						alt={"hero"}
+						width={570}
+						height={600}
+						className="aspect-[570/600]"
+					/>
+				</div>
+			</section>
+			{/* About Section  */}
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+			<section className="px-5 xl:px-[80px] md:px-[40px] flex items-center justify-between py-[55px]">
+				<div className="basis-[45%]">
+					<Image
+						src={"/abouth.png"}
+						alt={"hero"}
+						width={566}
+						height={585}
+						className="aspect-[566/585]"
+					/>
+				</div>
+				<div className="basis-[45%] flex flex-col gap-y-5">
+					<p className="text-base leading-8 font-normal tracking-[3px] text-[#FF6600]">
+						{" "}
+						ABOUT
+					</p>
+					<p className="font-black xl:text-[56px] lg:text-[50px] md:text-[40px] leading-[64px] tracking-[-1px] text-[#391400]">
+						{" "}
+						Aureate Media
+					</p>
+					<p className="font-normal text-[#391400] leading-8 lg:text-[20px] tracking-[0] md:text-base lg:w-[80%] md:w-[90%]">
+						We empower visionary brands to reach new heights with bold,
+						innovative, and authentic marketing solutions.
+					</p>
+					<Link
+						href={"/contact"}
+						className="text-sm font-black items-center text-[#391400] uppercase  w-[138px] h-[48px] md:flex  justify-center bg-white  rounded-[6px] mt-5 "
+					>
+						SEE MORE
+					</Link>
+				</div>
+			</section>
+
+	<section> 
+		</section>	
+		</main>
+	);
 }

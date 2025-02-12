@@ -2,7 +2,7 @@
 import { Epilogue } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import { HiOutlineMenuAlt4, HiX } from "react-icons/hi";
 
 interface Menu {
@@ -24,7 +24,6 @@ const menu: Menu[] = [
 ];
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isExiting, setIsExiting] = useState(false);
 
@@ -40,26 +39,13 @@ const Navbar = () => {
     }, 500);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
 			<header className="relative ">
 				<div
 					className={`${
 						epilogue.className
-					} bg-[#28293E]  px-5 lg:px-[60px] py-3.5 border-b  fixed top-0 left-0 w-full z-50 ${
-						isScrolled ? "border-black" : "border-gray-400"
-					}`}
+					} bg-[#28293E]  px-5 lg:px-[80px] md:px-[40px] py-4   fixed top-0 left-0 w-full z-50 `}
 				>
 					<div className="flex justify-between items-center">
 						<div>
@@ -67,10 +53,10 @@ const Navbar = () => {
 								href="/"
 								className="uppercase tracking-wider text-2xl font-medium"
 							>
-						<Image src={"/logo.svg"} alt={"logo"} width={140} height={34}/>
+								<Image src={"/logo.svg"} alt={"logo"} width={140} height={34} />
 							</Link>
 						</div>
-						<nav className="hidden md:flex items-center gap-x-36">
+						<nav className="hidden md:flex items-center gap-x-28">
 							{menu.map((item) => (
 								<div className="group relative " key={item.title}>
 									<Link
@@ -85,7 +71,7 @@ const Navbar = () => {
 						</nav>
 						<Link
 							href={"/contact"}
-							className="text-sm font-black items-center text-[#eeeeee] uppercase border w-[138px] h-[48px] md:flex  justify-center gap-x-1 hidden"
+							className="text-sm font-black items-center text-[#eeeeee] uppercase border w-[138px] h-[48px] md:flex  justify-center gap-x-1 rounded-md hidden"
 						>
 							Contact
 						</Link>
