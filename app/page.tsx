@@ -1,3 +1,14 @@
+import { Input } from "@/components/ui/input";
+import {
+	Select,
+	SelectContent,
+	SelectGroup,
+	SelectItem,
+	SelectLabel,
+	SelectTrigger,
+	SelectValue,
+} from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
 import { Epilogue } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
@@ -51,7 +62,6 @@ export default function Home() {
 				</div>
 			</section>
 			{/* About Section  */}
-
 			<section className="px-5 xl:px-[80px] md:px-[40px] flex items-center justify-between py-[55px]">
 				<div className="basis-[45%]">
 					<Image
@@ -134,6 +144,7 @@ export default function Home() {
 					<Services />
 				</div>
 			</section>
+			{/* Get started section */}
 			<section className="px-5 xl:px-[80px] md:px-[40px] py-[55px] ">
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-16  border-black items-center place-items-center">
 					<div className="flex flex-col gap-y-4 items-start  ">
@@ -161,6 +172,50 @@ export default function Home() {
 					</div>
 					<div className=" flex justify-center items-center ">
 						<Image src={"/consec2.png"} alt={"icon"} width={364} height={447} />
+					</div>
+				</div>
+			</section>
+			{/* Get in touch section  */}
+			<section className="lg:min-h-[80vh] md:min-h-[50vh] px-5 xl:px-[80px] md:px-[40px] py-[55px]  bg-cover md:bg-fixed bg-scroll bg-center bg-no-repeat bg-[url('/map.png')] w-full ">
+				<div className="bg-white lg:w-[40%] md:w-[55%] p-10 flex flex-col gap-y-5 justify-center ">
+					<p className="font-bold text-2xl leading-8 text-[#391400] ">
+						Get In Touch
+					</p>
+					<Input placeholder="Your email"/>
+					<Select>
+						<SelectTrigger>
+							<SelectValue placeholder="Select a Service" />
+						</SelectTrigger>
+						<SelectContent>
+							<SelectGroup>
+								<SelectLabel>Fruits</SelectLabel>
+								<SelectItem value="digital-marketing">
+									Digital Marketing
+								</SelectItem>
+								<SelectItem value="design-services">Design Services</SelectItem>
+								<SelectItem value="brand-management">
+									Brand Management
+								</SelectItem>
+								<SelectItem value="social-media-management">
+									Social Media Management
+								</SelectItem>
+								<SelectItem value="branding-brand-strategy">
+									Branding & Brand Strategy
+								</SelectItem>
+								<SelectItem value="website-development-management">
+									Website development & Management
+								</SelectItem>
+							</SelectGroup>
+						</SelectContent>
+					</Select>{" "}
+					<Textarea placeholder="Message" />
+					<div className="w-full flex justify-end">
+						<Link
+							href={"/contact"}
+							className="text-sm font-black items-center text-[#eeeeee] leading-[14.35px] w-[154px] h-[48px] md:flex justify-center bg-[#FF6600] rounded-[6px]"
+						>
+							CONTACT US
+						</Link>
 					</div>
 				</div>
 			</section>
