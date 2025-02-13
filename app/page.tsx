@@ -18,9 +18,9 @@ export default function Home() {
 	return (
 		<main className={`${epilogue.className} mt-18 bg-[#FDF0E9]`}>
 			{/* Hero Section */}
-			<section className="bg-[#28293E] text-white xl:min-h-screen md:min-h-[60vh] flex justify-between items-center px-5 xl:px-[80px] md:px-[40px] xl:pt-24 md:pt-24 lg:pt-36 xl:pb-5 lg:pb-10 md:pb-5 w-full sm:px-2">
-				<div className="basis-[50%] flex flex-col gap-y-8">
-					<p className="xl:text-[72px] lg:text-[60px] md:text-[45px] font-extrabold lg:leading-[80px] tracking-[-2px] text-white relative">
+			<section className="bg-[#28293E] text-white xl:min-h-screen md:min-h-[60vh] flex flex-col md:flex-row md:items-center justify-between items-start px-5 xl:px-[80px] md:px-[40px] xl:pt-24 md:pt-24 lg:pt-36 pt-36 xl:pb-5 lg:pb-10 md:pb-5 w-full sm:px-2 gap-y-6">
+				<div className="basis-full md:basis-[50%] flex flex-col gap-y-8 ">
+					<p className="xl:text-[72px] lg:text-[60px] md:text-[45px] text-[32px] font-extrabold lg:leading-[80px] tracking-[-2px] text-white relative">
 						<span className="z-20 relative">
 							We’ll Help <br /> To Build Your <br /> Dream Project
 						</span>
@@ -33,14 +33,14 @@ export default function Home() {
 							className="absolute lg:bottom-[130px] md:bottom-[105px] xl:left-[270px] md:left-[140px] lg:left-[220px]"
 						/>
 					</p>
-					<p className="text-base font-normal leading-8 lg:w-[80%] md:w-[90%]">
+					<p className="text-base font-normal leading-8 lg:w-[80%] md:w-[90%] mx-auto md:mx-0">
 						Our agency provides a plethora of services including Brand
 						management, design, Social media marketing, etc.
 					</p>
 					<div className="flex gap-x-8 items-center">
 						<Link
 							href={"/contact"}
-							className="text-sm font-black items-center text-[#eeeeee] uppercase  w-[138px] h-[48px] md:flex  justify-center bg-[#FF6600] rounded-[6px] "
+							className="text-sm font-black items-center text-[#eeeeee] uppercase  w-[138px] h-[48px] flex  justify-center bg-[#FF6600] rounded-[6px] "
 						>
 							HOW WE WORK
 						</Link>
@@ -50,44 +50,44 @@ export default function Home() {
 						</Link>
 					</div>
 				</div>
-				<div className="basis-[45%]">
+				<div className="basis-full md:basis-[45%] mt-10 md:mt-0">
 					<Image
 						src={"/hero.png"}
 						alt={"hero"}
 						width={570}
 						height={600}
 						priority
-						className="aspect-[570/600]"
+						className="aspect-[570/600] mx-auto md:mx-0"
 					/>
 				</div>
 			</section>
 			{/* About Section  */}
-			<section className="px-5 xl:px-[80px] md:px-[40px] flex items-center justify-between py-[55px]">
-				<div className="basis-[45%]">
+			<section className="px-5 xl:px-[80px] md:px-[40px] flex flex-col-reverse md:flex-row items-center justify-between py-[55px] gap-y-6">
+				<div className="basis-full md:basis-[45%] mb-10 md:mb-0">
 					<Image
 						src={"/abouth.png"}
 						alt={"hero"}
 						width={566}
 						height={585}
-						className="aspect-[566/585]"
+						className="aspect-[566/585] mx-auto md:mx-0"
 					/>
 				</div>
-				<div className="basis-[45%] flex flex-col gap-y-5">
+				<div className="basis-full md:basis-[45%] flex flex-col gap-y-5 ">
 					<p className="text-base leading-8 font-normal tracking-[3px] text-[#FF6600]">
 						{" "}
 						ABOUT
 					</p>
-					<p className="font-black xl:text-[56px] lg:text-[50px] md:text-[40px] leading-[64px] tracking-[-1px] text-[#391400]">
+					<p className="font-black xl:text-[56px] lg:text-[50px] md:text-[40px] text-[32px] leading-[64px] tracking-[-1px] text-[#391400]">
 						{" "}
 						Aureate Media
 					</p>
-					<p className="lg:text-[20px] font-normal leading-8 lg:w-[80%] md:w-[90%] text-[#391400] md:text-lg">
+					<p className="lg:text-[20px] font-normal leading-8 lg:w-[80%] md:w-[90%] mx-auto md:mx-0 text-[#391400] md:text-lg">
 						We empower visionary brands to reach new heights with bold,
 						innovative, and authentic marketing solutions.
 					</p>
 					<Link
 						href={"/contact"}
-						className="text-sm font-black items-center text-[#391400] uppercase  w-[138px] h-[48px] md:flex  justify-center bg-white  rounded-[6px] mt-5 "
+						className="text-sm font-black items-center text-[#391400] uppercase  w-[138px] h-[48px] flex  justify-center bg-white rounded-[6px] mt-5 "
 					>
 						SEE MORE
 					</Link>
@@ -162,7 +162,7 @@ export default function Home() {
 						</p>
 						<Link
 							href={"/contact"}
-							className="text-sm font-black items-center text-[#eeeeee] leading-[14.35px] w-[154px] h-[48px] md:flex justify-center bg-[#FF6600] rounded-[6px]"
+							className="text-sm font-black items-center text-[#eeeeee] leading-[14.35px] w-[154px] h-[48px] flex justify-center bg-[#FF6600] rounded-[6px]"
 						>
 							CONTACT US
 						</Link>
@@ -176,12 +176,12 @@ export default function Home() {
 				</div>
 			</section>
 			{/* Get in touch section  */}
-			<section className="lg:min-h-[80vh] md:min-h-[50vh] px-5 xl:px-[80px] md:px-[40px] py-[55px]  bg-cover md:bg-fixed bg-scroll bg-center bg-no-repeat bg-[url('/map.png')] w-full ">
+			<section className="xl:min-h-[80vh]  md:min-h-[50vh] px-5 xl:px-[80px] md:px-[40px] py-[55px]  bg-cover md:bg-fixed bg-scroll bg-center bg-no-repeat bg-[url('/map.png')] w-full ">
 				<div className="bg-white lg:w-[40%] md:w-[55%] p-10 flex flex-col gap-y-5 justify-center ">
 					<p className="font-bold text-2xl leading-8 text-[#391400] ">
 						Get In Touch
 					</p>
-					<Input placeholder="Your email"/>
+					<Input placeholder="Your email" />
 					<Select>
 						<SelectTrigger>
 							<SelectValue placeholder="Select a Service" />
@@ -212,10 +212,66 @@ export default function Home() {
 					<div className="w-full flex justify-end">
 						<Link
 							href={"/contact"}
-							className="text-sm font-black items-center text-[#eeeeee] leading-[14.35px] w-[154px] h-[48px] md:flex justify-center bg-[#FF6600] rounded-[6px]"
+							className="text-sm font-black items-center text-[#eeeeee] leading-[14.35px] w-[154px] h-[48px] flex justify-center bg-[#FF6600] rounded-[6px]"
 						>
 							CONTACT US
 						</Link>
+					</div>
+				</div>
+			</section>
+			{/* Contact Section  */}
+			<section className="px-5 xl:px-[80px] md:px-[40px] py-[55px] flex justify-center items-center">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 border border-[#F3D1BF]">
+					<div className="flex flex-col gap-y-6 border-b md:border-r border-r-[#F3D1BF] p-6">
+						<p className="inline-flex items-center gap-x-8">
+							<Image src={"/phone.png"} alt={"icon"} width={64} height={64} />
+							<span className="tracking-[3px] leading-8 font-normal text-base text-[#EF6D58] ">
+								PHONE
+							</span>
+						</p>
+						<p className="text-[20px] leading-8 font-normal text-[#391400] ">
+							+234 817-919-6483
+						</p>
+					</div>
+					<div className="flex flex-col gap-y-6 p-6">
+						<p className="inline-flex items-center gap-x-8">
+							<Image src={"/email.png"} alt={"icon"} width={64} height={64} />
+							<span className="tracking-[3px] leading-8 font-normal text-base text-[#EF6D58]">
+								EMAIL
+							</span>
+						</p>
+						<p className="text-[20px] leading-8 font-normal text-[#391400] ">
+							aureatemediahq@gmail.com
+						</p>
+					</div>
+				</div>
+			</section>
+			{/* Final Section */}
+			<section className="px-5 xl:px-[80px] md:px-[40px] py-[55px]">
+				<div className="flex flex-col md:flex-row items-center justify-center bg-[#FF9046] gap-10 py-10 px-5 md:px-0 gap-y-6">
+					<div className="basis-full md:basis-[45%] flex flex-col gap-y-5">
+						<p className="font-black xl:text-[56px] lg:text-[50px] md:text-[40px] text-[32px] lg:leading-[64px] md:leading-[50px] tracking-[-1px] text-white">
+							We’re Here <br /> To Build Your Dream Project
+						</p>
+						<p className="font-normal lg:leading-8 md:leading-6 md:w-[95%] text-white text-base">
+							A digital agency is a business you hire to outsource your digital
+							marketing efforts, instead of handling in-house.
+						</p>
+						<Link
+							href={"/contact"}
+							className="text-sm font-black items-center text-[#391400] w-[138px] h-[48px] flex justify-center bg-white rounded-[6px] mt-5"
+						>
+							CONTACT US
+						</Link>
+					</div>
+					<div className="basis-full md:basis-[45%] flex justify-center">
+						<Image
+							src={"/final.png"}
+							alt={"hero"}
+							width={443}
+							height={431}
+							className="aspect-[443/431]"
+						/>
 					</div>
 				</div>
 			</section>
