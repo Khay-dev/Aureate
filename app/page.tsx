@@ -188,7 +188,7 @@ export default function Home() {
 						</SelectTrigger>
 						<SelectContent>
 							<SelectGroup>
-								<SelectLabel>Fruits</SelectLabel>
+								<SelectLabel>Our Services</SelectLabel>
 								<SelectItem value="digital-marketing">
 									Digital Marketing
 								</SelectItem>
