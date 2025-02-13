@@ -13,14 +13,14 @@ interface Menu {
 const epilogue = Epilogue({ subsets: ["latin"], weight: ["400", "700"] });
 
 const menu: Menu[] = [
-  {
-    title: "About",
-    link: "/about",
-  },
-  {
-    title: "Services",
-    link: "/services",
-  }
+	{
+		title: "About",
+		link: "/about",
+	},
+	{
+		title: "Services",
+		link: "/services",
+	},
 ];
 
 const Navbar = () => {

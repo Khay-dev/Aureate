@@ -229,9 +229,14 @@ export default function Home() {
 								PHONE
 							</span>
 						</p>
-						<p className="text-[20px] leading-8 font-normal text-[#391400] ">
-							+234 817-919-6483
-						</p>
+						<Link
+							href="tel:+2348179196483"
+							className="hover:underline transition-all duration-300 ease-in-out w-fit"
+						>
+							<h3 className="text-[20px] leading-8 font-normal text-[#391400] ">
+								+234 817-919-6483{" "}
+							</h3>
+						</Link>
 					</div>
 					<div className="flex flex-col gap-y-6 p-6">
 						<p className="inline-flex items-center gap-x-8">
@@ -240,9 +245,14 @@ export default function Home() {
 								EMAIL
 							</span>
 						</p>
-						<p className="text-[20px] leading-8 font-normal text-[#391400] ">
-							aureatemediahq@gmail.com
-						</p>
+						<Link
+							href="mailto:aureatemediahq@gmail.com"
+							className="hover:underline transition-all duration-300 ease-in-out w-fit"
+						>
+							<h3 className="text-[20px] leading-8 font-normal text-[#391400] ">
+								aureatemediahq@gmail.com
+							</h3>
+						</Link>
 					</div>
 				</div>
 			</section>
@@ -253,7 +263,7 @@ export default function Home() {
 						<p className="font-black xl:text-[56px] lg:text-[50px] md:text-[40px] text-[32px] lg:leading-[64px] md:leading-[50px] tracking-[-1px] text-white">
 							We’re Here <br /> To Build Your Dream Project
 						</p>
-						<p className="font-normal lg:leading-8 md:leading-6 md:w-[95%] text-white text-base">
+						<p className="font-normal lg:leading-8 md:leading-6 md:w-[90%] w-full text-white text-base">
 							A digital agency is a business you hire to outsource your digital
 							marketing efforts, instead of handling in-house.
 						</p>
