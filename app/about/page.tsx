@@ -49,22 +49,22 @@ const AboutPage: React.FC = () => {
 
 			<section className="px-5 xl:px-[80px] md:px-[40px] py-[55px] pb-10 flex flex-col md:flex-row items-center gap-5">
 				<div className="md:basis-[50%] basis-full">
-					<Image src={"/about1.png"} alt={"icon"} width={570} height={448} />
+					<Image src={"/about1.png"} alt={"icon"} width={570} height={448}  />
 				</div>
 				<div className="md:basis-[50%] basis-full md:flex flex-col gap-y-5 hidden">
 					<div className="flex flex-col md:flex-row items-center gap-5">
-						<Image src={"/about2.png"} alt={"icon"} width={270} height={208} />
-						<Image src={"/about3.png"} alt={"icon"} width={270} height={208} />
+						<Image src={"/about2.png"} alt={"icon"} width={270} height={208} className="w-full h-auto md:w-[270px]" />
+						<Image src={"/about3.png"} alt={"icon"} width={270} height={208} className="w-full h-auto md:w-[270px]" />
 					</div>
 					<div className="flex flex-col md:flex-row items-center gap-5">
-						<Image src={"/about4.png"} alt={"icon"} width={270} height={208} />
-						<Image src={"/about5.png"} alt={"icon"} width={270} height={208} />
+						<Image src={"/about4.png"} alt={"icon"} width={270} height={208} className="w-full h-auto md:w-[270px]" />
+						<Image src={"/about5.png"} alt={"icon"} width={270} height={208} className="w-full h-auto md:w-[270px]" />
 					</div>
 				</div>
 			</section>
 
 			<section className="px-5 xl:px-[80px] md:px-[40px] pt-[55px] bg-[#28293E] relative">
-				<div className="flex flex-col md:flex-row items-center justify-center bg-[#FF9046] gap-10 py-10 px-5 md:px-0 gap-y-6 relative top-14">
+				<div className="flex flex-col md:flex-row items-center justify-center bg-[#FF9046] gap-10 py-10 px-5 md:px-0 gap-y-6 relative top-10">
 					<div className="basis-full md:basis-[45%] flex flex-col gap-y-5">
 						<p className="font-black xl:text-[56px] lg:text-[50px] md:text-[40px] text-[32px] lg:leading-[64px] md:leading-[50px] tracking-[-1px] text-white">
 							We’re Here <br /> To Build Your Dream Project
@@ -91,6 +91,8 @@ const AboutPage: React.FC = () => {
 					</div>
 				</div>
 			</section>
+				<section className="px-[80px]  py-[50px]  "/>
+
 		</main>
 	);
 };
