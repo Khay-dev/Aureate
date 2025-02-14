@@ -18,9 +18,9 @@ export default function Home() {
 	return (
 		<main className={`${epilogue.className} mt-18 bg-[#FDF0E9]`}>
 			{/* Hero Section */}
-			<section className="bg-[#28293E] text-white xl:min-h-screen md:min-h-[60vh] flex flex-col md:flex-row md:items-center justify-between items-start px-5 xl:px-[80px] md:px-[40px] xl:pt-24 md:pt-24 lg:pt-36 pt-36 xl:pb-5 lg:pb-10 md:pb-5 w-full sm:px-2 gap-y-6">
+			<section className="bg-[#28293E] text-white xl:min-h-screen md:min-h-[60vh] flex flex-col md:flex-row md:items-center justify-between items-start px-5 xl:px-[80px] md:px-[40px] xl:pt-24 md:pt-24 lg:pt-36 pt-[7rem] xl:pb-5 lg:pb-10 md:pb-5 w-full sm:px-2 gap-y-6">
 				<div className="basis-full md:basis-[50%] flex flex-col gap-y-8 ">
-					<p className="xl:text-[72px] lg:text-[60px] md:text-[45px] text-[32px] font-extrabold lg:leading-[80px] tracking-[-2px] text-white relative">
+					<p className="xl:text-[72px] lg:text-[60px] md:text-[45px] text-[40px] font-extrabold lg:leading-[80px] tracking-[-2px] text-white relative">
 						<span className="z-20 relative">
 							We’ll Help <br /> To Build Your <br /> Dream Project
 						</span>
@@ -30,7 +30,7 @@ export default function Home() {
 							width={140}
 							height={140}
 							priority
-							className="absolute lg:bottom-[130px] md:bottom-[105px] xl:left-[270px] md:left-[140px] lg:left-[220px]"
+							className="absolute lg:bottom-[130px] md:bottom-[105px] bottom-[104px] left-[115px] xl:left-[270px] md:left-[140px] lg:left-[220px] aspect-[75/60] md:aspect-auto"
 						/>
 					</p>
 					<p className="text-base font-normal leading-8 lg:w-[80%] md:w-[90%] mx-auto md:mx-0">
@@ -95,11 +95,11 @@ export default function Home() {
 			</section>
 			{/* How we work section */}
 			<section className="px-5 xl:px-[80px] md:px-[40px] py-[55px]">
-				<p className="tracking-[3px] leading-8 font-normal text-base text-[#EF6D58] mb-5">
+				<p className="tracking-[3px] leading-8 font-normal text-base text-[#EF6D58] mb-9">
 					HOW WE WORK
 				</p>
-				<div className="flex flex-col md:flex-row items-start justify-between">
-					<div className="basis-full md:basis-[45%] flex flex-col gap-y-4 md:text-[30px] lg:text-[40px] leading-[40px] md:leading-[48px] font-black">
+				<div className="flex flex-col md:flex-row items-start justify-between gap-y-8">
+					<div className="basis-full md:basis-[45%] flex flex-col gap-y-4 md:text-[30px] text-[32px] lg:text-[40px] leading-[40px] md:leading-[48px] font-black text-[#391400]">
 						We bring Your Ideas <br /> To Fruition through
 					</div>
 					<div className="text-[#391400] flex flex-col gap-y-9 basis-full md:basis-[50%] mt-5 md:mt-0">
@@ -147,7 +147,7 @@ export default function Home() {
 			{/* Get started section */}
 			<section className="px-5 xl:px-[80px] md:px-[40px] py-[55px] ">
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-16  border-black items-center place-items-center">
-					<div className="flex flex-col gap-y-4 items-start  ">
+					<div className="flex flex-col gap-y-4 items-center md:items-start  ">
 						<Image
 							src={"/contacticon.png"}
 							alt={"icon"}
@@ -157,7 +157,7 @@ export default function Home() {
 						<p className="tracking-[3px] leading-8 font-normal text-base text-[#EF6D58] mb-5">
 							GET STARTED
 						</p>
-						<p className="basis-full md:basis-[45%] flex flex-col gap-y-4 text-2xl leading-[32px] font-bold">
+						<p className="basis-full md:basis-[45%] flex flex-col gap-y-4 text-2xl leading-[32px] font-bold text-center md:text-left">
 							We Help Companies <br /> Move Faster
 						</p>
 						<Link
