@@ -53,7 +53,7 @@ const Navbar = () => {
 								href="/"
 								className="uppercase tracking-wider text-2xl font-medium"
 							>
-								<Image src={"/logo.png"} alt={"logo"} width={140} height={34} className="w-full h-auto" priority/>
+								<Image src={"/logo.png"} alt={"logo"} width={140} height={34}  priority/>
 							</Link>
 						</div>
 						<nav className="hidden md:flex items-center gap-x-28">
