@@ -1,6 +1,12 @@
 import type React from "react";
-
+import {
+	Accordion,
+	AccordionContent,
+	AccordionItem,
+	AccordionTrigger,
+} from "@/components/ui/accordion";
 import { Epilogue } from "next/font/google";
+import Image from "next/image";
 
 const epilogue = Epilogue({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -18,6 +24,131 @@ const ServicePage: React.FC = () => {
 						design, business understanding.
 					</p>
 				</div>
+			</section>
+			<section className="px-5 xl:px-[80px] md:px-[40px] py-[55px]">
+				<p className="tracking-[3px] leading-8 font-normal text-base text-[#EF6D58] mb-6">
+					SERVICES
+				</p>
+				<div className="flex flex-col md:flex-row items-start justify-between gap-y-8">
+					<div className="basis-full md:basis-[45%] flex flex-col gap-y-4 md:text-[30px] text-[32px] lg:text-[40px] leading-[40px] md:leading-[48px] font-black text-[#391400]">
+						Digital agency is a business you hire to outsource your digital
+						marketing efforts
+					</div>
+					<div className="text-[#391400A3] flex flex-col gap-y-5 basis-full md:basis-[50%] mt-5 md:mt-0">
+						<p className="font-normal tracking-normal leading-8  text-base">
+							Ability to put themselves in the merchant&apos;s shoes. It is
+							meant to partner on the long run, and work as an extension of the
+							merchant&apos;s team.
+						</p>
+
+						<p className="font-normal tracking-normal leading-8  text-base text-[#391400A3]">
+							{" "}
+							A digital agency is a business you hire to outsource your digital
+							marketing efforts, instead of handling in-house. They can provide
+							your business with a variety of digital solutions to promote your
+							product or service online and help you.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section className="px-5 xl:px-[80px] md:px-[40px] py-[55px]">
+				{" "}
+				<Accordion type="single" collapsible className="w-full text-[#391400]">
+					<AccordionItem value="item-1" className="py-5">
+						<AccordionTrigger>
+							<p className="inline-flex items-center gap-x-7">
+								<Image
+									src={"/design.png"}
+									alt={"icon"}
+									width={70}
+									height={70}
+								/>
+								<span className="text-[50px] leading-[64px] font-extrabold">
+									{" "}
+									Design Services
+								</span>
+							</p>
+						</AccordionTrigger>
+						<AccordionContent>
+							Yes. It adheres to the WAI-ARIA design pattern.
+						</AccordionContent>
+					</AccordionItem>
+					<AccordionItem value="item-2" className="py-5">
+						<AccordionTrigger>
+							<p className="inline-flex items-center gap-x-7">
+								<Image src={"/web.png"} alt={"icon"} width={70} height={70} />
+								<span className="text-[50px] leading-[64px] font-extrabold">
+									{" "}
+									Website Development & Management
+								</span>
+							</p>
+						</AccordionTrigger>
+						<AccordionContent>
+							Yes. It comes with default styles that matches the other
+							components&apos; aesthetic.
+						</AccordionContent>
+					</AccordionItem>
+					<AccordionItem value="item-3" className="py-5">
+						<AccordionTrigger>
+							<p className="inline-flex items-center gap-x-7">
+								<Image src={"/dig.png"} alt={"icon"} width={70} height={70} />
+								<span className="text-[50px] leading-[64px] font-extrabold">
+									{" "}
+									Digital Marketing
+								</span>
+							</p>
+						</AccordionTrigger>
+						<AccordionContent>
+							Yes. It&apos;s animated by default, but you can disable it if you
+							prefer.
+						</AccordionContent>
+					</AccordionItem>
+					<AccordionItem value="item-4" className="py-5">
+						<AccordionTrigger>
+							<p className="inline-flex items-center gap-x-7">
+								<Image src={"/brand.png"} alt={"icon"} width={70} height={70} />
+								<span className="text-[50px] leading-[64px] font-extrabold">
+									{" "}
+									Brand Management
+								</span>
+							</p>
+						</AccordionTrigger>
+						<AccordionContent>
+							Yes. It&apos;s animated by default, but you can disable it if you
+							prefer.
+						</AccordionContent>
+					</AccordionItem>
+					<AccordionItem value="item-5" className="py-5">
+						<AccordionTrigger>
+							<p className="inline-flex items-center gap-x-7">
+								<Image src={"/soc.png"} alt={"icon"} width={70} height={70} />
+								<span className="text-[50px] leading-[64px] font-extrabold">
+									{" "}
+									Social Media Management
+								</span>
+							</p>
+						</AccordionTrigger>
+						<AccordionContent>
+							Yes. It&apos;s animated by default, but you can disable it if you
+							prefer.
+						</AccordionContent>
+					</AccordionItem>
+					<AccordionItem value="item-6" className="py-5">
+						<AccordionTrigger>
+							<p className="inline-flex items-center gap-x-7">
+								<Image src={"/brass.png"} alt={"icon"} width={70} height={70} />
+								<span className="text-[50px] leading-[64px] font-extrabold">
+									{" "}
+									Branding & Brand Strategy
+								</span>
+							</p>
+						</AccordionTrigger>
+						<AccordionContent>
+							Yes. It&apos;s animated by default, but you can disable it if you
+							prefer.
+						</AccordionContent>
+					</AccordionItem>
+				</Accordion>
 			</section>
 		</main>
 	);

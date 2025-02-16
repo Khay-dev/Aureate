@@ -26,7 +26,7 @@ const SelectTrigger = React.forwardRef<
 	>
 		{children}
 		<SelectPrimitive.Icon asChild>
-			<IoMdArrowDropdown className="h-[20px] w-[20px] text-[#FF6600] text-2xl" />
+			<IoMdArrowDropdown className="h-[20px] w-[20px] text-[#FF6600] text-2xl opacity-50" />
 		</SelectPrimitive.Icon>
 	</SelectPrimitive.Trigger>
 ));
