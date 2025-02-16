@@ -69,8 +69,69 @@ const ServicePage: React.FC = () => {
 								</span>
 							</p>
 						</AccordionTrigger>
-						<AccordionContent>
-							Yes. It adheres to the WAI-ARIA design pattern.
+						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
+							<div className="flex-col gap-y-5 flex">
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>{" "}
+							</div>
 						</AccordionContent>
 					</AccordionItem>
 					<AccordionItem value="item-2" className="py-5">
@@ -83,9 +144,69 @@ const ServicePage: React.FC = () => {
 								</span>
 							</p>
 						</AccordionTrigger>
-						<AccordionContent>
-							Yes. It comes with default styles that matches the other
-							components&apos; aesthetic.
+						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
+							<div className="flex-col gap-y-5 flex">
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>{" "}
+							</div>
 						</AccordionContent>
 					</AccordionItem>
 					<AccordionItem value="item-3" className="py-5">
@@ -98,9 +219,69 @@ const ServicePage: React.FC = () => {
 								</span>
 							</p>
 						</AccordionTrigger>
-						<AccordionContent>
-							Yes. It&apos;s animated by default, but you can disable it if you
-							prefer.
+						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
+							<div className="flex-col gap-y-5 flex">
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>{" "}
+							</div>
 						</AccordionContent>
 					</AccordionItem>
 					<AccordionItem value="item-4" className="py-5">
@@ -113,9 +294,69 @@ const ServicePage: React.FC = () => {
 								</span>
 							</p>
 						</AccordionTrigger>
-						<AccordionContent>
-							Yes. It&apos;s animated by default, but you can disable it if you
-							prefer.
+						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
+							<div className="flex-col gap-y-5 flex">
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>{" "}
+							</div>
 						</AccordionContent>
 					</AccordionItem>
 					<AccordionItem value="item-5" className="py-5">
@@ -128,9 +369,69 @@ const ServicePage: React.FC = () => {
 								</span>
 							</p>
 						</AccordionTrigger>
-						<AccordionContent>
-							Yes. It&apos;s animated by default, but you can disable it if you
-							prefer.
+						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
+							<div className="flex-col gap-y-5 flex">
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>{" "}
+							</div>
 						</AccordionContent>
 					</AccordionItem>
 					<AccordionItem value="item-6" className="py-5">
@@ -143,9 +444,69 @@ const ServicePage: React.FC = () => {
 								</span>
 							</p>
 						</AccordionTrigger>
-						<AccordionContent>
-							Yes. It&apos;s animated by default, but you can disable it if you
-							prefer.
+						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px]">
+							<div className="flex-col gap-y-5 flex">
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Branding: (Logo Design, Identity Design, Brand Standards,
+										etc.)
+									</span>
+								</p>{" "}
+							</div>
 						</AccordionContent>
 					</AccordionItem>
 				</Accordion>
