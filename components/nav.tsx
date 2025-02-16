@@ -49,12 +49,14 @@ const Navbar = () => {
 				>
 					<div className="flex justify-between items-center">
 						<div>
-							<Link
-								href="/"
-								className="uppercase tracking-wider text-2xl font-medium"
-							>
-								<Image src={"/logo.png"} alt={"logo"} width={140} height={34}  priority/>
-							</Link>
+							{!isMenuOpen && (
+								<Link
+									href="/"
+									className="uppercase tracking-wider text-2xl font-medium"
+								>
+									<Image src={"/logo.png"} alt={"logo"} width={140} height={34} priority />
+								</Link>
+							)}
 						</div>
 						<nav className="hidden md:flex items-center gap-x-28">
 							{menu.map((item) => (

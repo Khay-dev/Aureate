@@ -56,14 +56,17 @@ const ServicePage: React.FC = () => {
 				<Accordion type="single" collapsible className="w-full text-[#391400]">
 					<AccordionItem value="item-1" className="py-5">
 						<AccordionTrigger>
-							<p className="inline-flex items-center gap-x-7">
+							<p className="inline-flex items-center md:gap-x-7 gap-x-4">
 								<Image
 									src={"/design.png"}
 									alt={"icon"}
-									width={70}
-									height={70}
+									width={50}
+									height={50}
 								/>
-								<span className="text-[50px] leading-[64px] font-extrabold">
+								<span
+									className="md:text-[40px] lg:text-[50px] text-[23px] md:leading-[64px] leading-8 font-extrabold w-fit"
+									title="Design Services"
+								>
 									{" "}
 									Design Services
 								</span>
@@ -136,11 +139,14 @@ const ServicePage: React.FC = () => {
 					</AccordionItem>
 					<AccordionItem value="item-2" className="py-5">
 						<AccordionTrigger>
-							<p className="inline-flex items-center gap-x-7">
-								<Image src={"/web.png"} alt={"icon"} width={70} height={70} />
-								<span className="text-[50px] leading-[64px] font-extrabold">
+							<p className="inline-flex items-center md:gap-x-7 gap-x-4">
+								<Image src={"/web.png"} alt={"icon"} width={50} height={50} />
+								<span
+									className="md:text-[40px] lg:text-[50px] text-[23px] md:leading-[64px] leading-8 font-extrabold w-fit"
+									title="Website Development & Management"
+								>
 									{" "}
-									Website Development & Management
+									Website Development <br /> & Management
 								</span>
 							</p>
 						</AccordionTrigger>
@@ -211,9 +217,12 @@ const ServicePage: React.FC = () => {
 					</AccordionItem>
 					<AccordionItem value="item-3" className="py-5">
 						<AccordionTrigger>
-							<p className="inline-flex items-center gap-x-7">
-								<Image src={"/dig.png"} alt={"icon"} width={70} height={70} />
-								<span className="text-[50px] leading-[64px] font-extrabold">
+							<p className="inline-flex items-center md:gap-x-7 gap-x-4">
+								<Image src={"/dig.png"} alt={"icon"} width={50} height={50} />
+								<span
+									className="md:text-[40px] lg:text-[50px] text-[23px] md:leading-[64px] leading-8 font-extrabold w-fit"
+									title="Digital Marketing"
+								>
 									{" "}
 									Digital Marketing
 								</span>
@@ -286,9 +295,12 @@ const ServicePage: React.FC = () => {
 					</AccordionItem>
 					<AccordionItem value="item-4" className="py-5">
 						<AccordionTrigger>
-							<p className="inline-flex items-center gap-x-7">
-								<Image src={"/brand.png"} alt={"icon"} width={70} height={70} />
-								<span className="text-[50px] leading-[64px] font-extrabold">
+							<p className="inline-flex items-center md:gap-x-7 gap-x-4">
+								<Image src={"/brand.png"} alt={"icon"} width={50} height={50} />
+								<span
+									className="md:text-[40px] lg:text-[50px] text-[23px] md:leading-[64px] leading-8 font-extrabold w-fit"
+									title="brand Management"
+								>
 									{" "}
 									Brand Management
 								</span>
@@ -361,9 +373,12 @@ const ServicePage: React.FC = () => {
 					</AccordionItem>
 					<AccordionItem value="item-5" className="py-5">
 						<AccordionTrigger>
-							<p className="inline-flex items-center gap-x-7">
-								<Image src={"/soc.png"} alt={"icon"} width={70} height={70} />
-								<span className="text-[50px] leading-[64px] font-extrabold">
+							<p className="inline-flex items-center md:gap-x-7 gap-x-4">
+								<Image src={"/soc.png"} alt={"icon"} width={50} height={50} />
+								<span
+									className="md:text-[40px] lg:text-[50px] text-[23px] md:leading-[64px] leading-8 font-extrabold w-fit"
+									title="Social Media Management"
+								>
 									{" "}
 									Social Media Management
 								</span>
@@ -436,9 +451,12 @@ const ServicePage: React.FC = () => {
 					</AccordionItem>
 					<AccordionItem value="item-6" className="py-5">
 						<AccordionTrigger>
-							<p className="inline-flex items-center gap-x-7">
-								<Image src={"/brass.png"} alt={"icon"} width={70} height={70} />
-								<span className="text-[50px] leading-[64px] font-extrabold">
+							<p className="inline-flex items-center md:gap-x-7 gap-x-4">
+								<Image src={"/brass.png"} alt={"icon"} width={50} height={50} />
+								<span
+									className="md:text-[40px] lg:text-[50px] text-[23px] md:leading-[64px] leading-8 font-extrabold w-fit"
+									title="Branding & Brand Strategy"
+								>
 									{" "}
 									Branding & Brand Strategy
 								</span>

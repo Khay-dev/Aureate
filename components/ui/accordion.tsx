@@ -34,7 +34,7 @@ const AccordionTrigger = React.forwardRef<
 			{...props}
 		>
 			{children}
-			<IoMdArrowDropdown className="h-[32px] w-[32px] shrink-0 text-white transition-transform duration-200 bg-[#FF6600] rounded-full" />
+			<IoMdArrowDropdown className="md:h-[32px] h-[20px] md:w-[32px] w-[20px] shrink-0 text-white transition-transform duration-200 bg-[#FF6600] rounded-full"/>
 		</AccordionPrimitive.Trigger>
 	</AccordionPrimitive.Header>
 ));
