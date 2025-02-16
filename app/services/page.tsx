@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/accordion";
 import { Epilogue } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 
 const epilogue = Epilogue({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -53,7 +54,12 @@ const ServicePage: React.FC = () => {
 			</section>
 			<section className="px-5 xl:px-[80px] md:px-[40px] py-[55px]">
 				{" "}
-				<Accordion type="single" collapsible className="w-full text-[#391400]">
+				<Accordion
+					type="single"
+					collapsible
+					defaultValue="item-1"
+					className="w-full text-[#391400]"
+				>
 					<AccordionItem value="item-1" className="py-5">
 						<AccordionTrigger>
 							<p className="inline-flex items-center md:gap-x-7 gap-x-4">
@@ -73,7 +79,7 @@ const ServicePage: React.FC = () => {
 							</p>
 						</AccordionTrigger>
 						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
-							<div className="flex-col gap-y-5 flex">
+							<div className="flex-col gap-y-5 flex  lg:w-[50%] md:w-[65%] w-full">
 								<p className="inline-flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
@@ -94,7 +100,19 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
+										Graphic Design: (Print Design: Brochures, flyers, posters,
+										business cards, etc)
+									</span>
+								</p>
+								<p className="inline-flex gap-x-3 items-center">
+									<Image
+										src={"/check.png"}
+										alt={"icon"}
+										width={30}
+										height={30}
+									/>
+									<span>
+										Digital Design: (Social media graphics, email newsletters,
 										etc.)
 									</span>
 								</p>
@@ -106,8 +124,8 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Advertising Design: (Billboards, magazine ads, online ads,
+										etc)
 									</span>
 								</p>
 								<p className="inline-flex gap-x-3 items-center">
@@ -118,22 +136,16 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										UI/UX Design: (Wireframing, Prototyping, Mobile app design,
+										etc)
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
-									<Image
-										src={"/check.png"}
-										alt={"icon"}
-										width={30}
-										height={30}
-									/>
-									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
-									</span>
-								</p>{" "}
+								<Link
+									href={"/contact"}
+									className="text-sm font-black items-center text-[#eeeeee] leading-[14.35px] w-[154px] h-[48px] flex justify-center bg-[#FF6600] mt-5 rounded-[6px]"
+								>
+									CONTACT US
+								</Link>
 							</div>
 						</AccordionContent>
 					</AccordionItem>
@@ -151,7 +163,7 @@ const ServicePage: React.FC = () => {
 							</p>
 						</AccordionTrigger>
 						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
-							<div className="flex-col gap-y-5 flex">
+							<div className="flex-col gap-y-5 flex  lg:w-[50%] md:w-[65%] w-full">
 								<p className="inline-flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
@@ -160,8 +172,8 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Custom Website Design: Personalized design, wireframing, and
+										user experience optimization
 									</span>
 								</p>
 								<p className="inline-flex gap-x-3 items-center">
@@ -172,8 +184,8 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										E-commerce Development: Product pages, shopping cart,
+										payment integration, customer management
 									</span>
 								</p>
 								<p className="inline-flex gap-x-3 items-center">
@@ -184,8 +196,8 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Website Redesign: Revamping outdated sites with modern
+										aesthetics and functionality
 									</span>
 								</p>
 								<p className="inline-flex gap-x-3 items-center">
@@ -196,8 +208,8 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Landing Page Design: One-page sites for specific campaigns
+										or products
 									</span>
 								</p>
 								<p className="inline-flex gap-x-3 items-center">
@@ -208,10 +220,16 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Maintenance & Support: Regular updates, security checks, and
+										performance optimization
 									</span>
-								</p>{" "}
+								</p>
+								<Link
+									href={"/contact"}
+									className="text-sm font-black items-center text-[#eeeeee] leading-[14.35px] w-[154px] h-[48px] flex justify-center bg-[#FF6600] mt-5 rounded-[6px]"
+								>
+									CONTACT US
+								</Link>
 							</div>
 						</AccordionContent>
 					</AccordionItem>
@@ -229,7 +247,7 @@ const ServicePage: React.FC = () => {
 							</p>
 						</AccordionTrigger>
 						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
-							<div className="flex-col gap-y-5 flex">
+							<div className="flex-col gap-y-5 flex  lg:w-[50%] md:w-[65%] w-full">
 								<p className="inline-flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
@@ -238,8 +256,7 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Content Marketing: Blog posts, articles, and guides
 									</span>
 								</p>
 								<p className="inline-flex gap-x-3 items-center">
@@ -250,8 +267,8 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Email Marketing: Newsletter design, campaign management,
+										lead nurturing
 									</span>
 								</p>
 								<p className="inline-flex gap-x-3 items-center">
@@ -262,8 +279,8 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Paid Advertising: Google Ads, Social media ads (Facebook,
+										Instagram, LinkedIn, etc.) retargeting ads
 									</span>
 								</p>
 								<p className="inline-flex gap-x-3 items-center">
@@ -274,8 +291,8 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Influencer Marketing: Researching influencers, managing
+										collaborations, tracking campaign success
 									</span>
 								</p>
 								<p className="inline-flex gap-x-3 items-center">
@@ -286,10 +303,16 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Video Marketing: Video creation, YouTube channel
+										optimization, video ads
 									</span>
-								</p>{" "}
+								</p>
+								<Link
+									href={"/contact"}
+									className="text-sm font-black items-center text-[#eeeeee] leading-[14.35px] w-[154px] h-[48px] flex justify-center bg-[#FF6600] mt-5 rounded-[6px]"
+								>
+									CONTACT US
+								</Link>
 							</div>
 						</AccordionContent>
 					</AccordionItem>
@@ -307,67 +330,89 @@ const ServicePage: React.FC = () => {
 							</p>
 						</AccordionTrigger>
 						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
-							<div className="flex-col gap-y-5 flex">
-								<p className="inline-flex gap-x-3 items-center">
-									<Image
-										src={"/check.png"}
-										alt={"icon"}
-										width={30}
-										height={30}
-									/>
-									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
-									</span>
-								</p>
-								<p className="inline-flex gap-x-3 items-center">
-									<Image
-										src={"/check.png"}
-										alt={"icon"}
-										width={30}
-										height={30}
-									/>
-									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
-									</span>
-								</p>
-								<p className="inline-flex gap-x-3 items-center">
-									<Image
-										src={"/check.png"}
-										alt={"icon"}
-										width={30}
-										height={30}
-									/>
-									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
-									</span>
-								</p>
-								<p className="inline-flex gap-x-3 items-center">
-									<Image
-										src={"/check.png"}
-										alt={"icon"}
-										width={30}
-										height={30}
-									/>
-									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
-									</span>
-								</p>
-								<p className="inline-flex gap-x-3 items-center">
-									<Image
-										src={"/check.png"}
-										alt={"icon"}
-										width={30}
-										height={30}
-									/>
-									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
-									</span>
-								</p>{" "}
+							<div className="flex flex-col-reverse md:flex-row items-start justify-end md:gap-x-10 gap-y-5 lg:w-[50%] md:w-[65%] w-full ">
+								<div className="flex-col gap-y-5 flex">
+									<p className="inline-flex gap-x-3 items-center">
+										<Image
+											src={"/check.png"}
+											alt={"icon"}
+											width={30}
+											height={30}
+										/>
+										<span>Brand strategy</span>
+									</p>
+									<p className="inline-flex gap-x-3 items-center">
+										<Image
+											src={"/check.png"}
+											alt={"icon"}
+											width={30}
+											height={30}
+										/>
+										<span>Brand positioning</span>
+									</p>
+									<p className="inline-flex gap-x-3 items-center">
+										<Image
+											src={"/check.png"}
+											alt={"icon"}
+											width={30}
+											height={30}
+										/>
+										<span>Brand identity management</span>
+									</p>
+									<p className="inline-flex gap-x-3 items-center">
+										<Image
+											src={"/check.png"}
+											alt={"icon"}
+											width={30}
+											height={30}
+										/>
+										<span>Brand asset management</span>
+									</p>
+									<Link
+										href={"/contact"}
+										className="text-sm font-black items-center text-[#eeeeee] leading-[14.35px] w-[154px] h-[48px] flex justify-center bg-[#FF6600] mt-5 rounded-[6px]"
+									>
+										CONTACT US
+									</Link>
+								</div>
+								<div className="flex-col gap-y-5 flex">
+									<p className="inline-flex gap-x-3 items-center">
+										<Image
+											src={"/check.png"}
+											alt={"icon"}
+											width={30}
+											height={30}
+										/>
+										<span>Brand compliance</span>
+									</p>
+									<p className="inline-flex gap-x-3 items-center">
+										<Image
+											src={"/check.png"}
+											alt={"icon"}
+											width={30}
+											height={30}
+										/>
+										<span>Brand risk management</span>
+									</p>
+									<p className="inline-flex gap-x-3 items-center">
+										<Image
+											src={"/check.png"}
+											alt={"icon"}
+											width={30}
+											height={30}
+										/>
+										<span>Brand performance analysis</span>
+									</p>
+									<p className="inline-flex gap-x-3 items-center">
+										<Image
+											src={"/check.png"}
+											alt={"icon"}
+											width={30}
+											height={30}
+										/>
+										<span>Brand asset management</span>
+									</p>
+								</div>
 							</div>
 						</AccordionContent>
 					</AccordionItem>
@@ -385,7 +430,7 @@ const ServicePage: React.FC = () => {
 							</p>
 						</AccordionTrigger>
 						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
-							<div className="flex-col gap-y-5 flex">
+							<div className="flex-col gap-y-5 flex  lg:w-[50%] md:w-[65%] w-full">
 								<p className="inline-flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
@@ -394,8 +439,8 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Content Creation: Graphic design, reels, Video snippets,
+										Stories
 									</span>
 								</p>
 								<p className="inline-flex gap-x-3 items-center">
@@ -406,8 +451,8 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Community Management: Engaging with followers, responding to
+										comments, handling inquiries.
 									</span>
 								</p>
 								<p className="inline-flex gap-x-3 items-center">
@@ -418,8 +463,8 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Analytics & reporting: Tracking engagement, growth metrics,
+										and Sentiment.
 									</span>
 								</p>
 								<p className="inline-flex gap-x-3 items-center">
@@ -430,8 +475,8 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Social Media strategy development: Audience research,
+										content calendar planning.
 									</span>
 								</p>
 								<p className="inline-flex gap-x-3 items-center">
@@ -442,10 +487,16 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Social Media Advertising: Targeted ad campaigns on various
+										platforms
 									</span>
-								</p>{" "}
+								</p>
+								<Link
+									href={"/contact"}
+									className="text-sm font-black items-center text-[#eeeeee] leading-[14.35px] w-[154px] h-[48px] flex justify-center bg-[#FF6600] mt-5 rounded-[6px]"
+								>
+									CONTACT US
+								</Link>
 							</div>
 						</AccordionContent>
 					</AccordionItem>
@@ -463,7 +514,7 @@ const ServicePage: React.FC = () => {
 							</p>
 						</AccordionTrigger>
 						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px]">
-							<div className="flex-col gap-y-5 flex">
+							<div className="flex-col gap-y-5 flex  lg:w-[50%] md:w-[65%] w-full">
 								<p className="inline-flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
@@ -472,8 +523,8 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Brand Identity Development: Logo design, typography, color
+										palette, brand voice
 									</span>
 								</p>
 								<p className="inline-flex gap-x-3 items-center">
@@ -484,8 +535,8 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Market Positioning: Competitive analysis, target audience
+										insights, positioning strategy
 									</span>
 								</p>
 								<p className="inline-flex gap-x-3 items-center">
@@ -496,8 +547,8 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Brand Guidelines: Document detailing logo usage, voice and
+										tone, style guidelines
 									</span>
 								</p>
 								<p className="inline-flex gap-x-3 items-center">
@@ -508,8 +559,8 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Content Strategy: Crafting messaging frameworks, content
+										pillars, storytelling techniques
 									</span>
 								</p>
 								<p className="inline-flex gap-x-3 items-center">
@@ -520,10 +571,16 @@ const ServicePage: React.FC = () => {
 										height={30}
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Rebranding Services: Redesigning logos, updating brand
+										assets, repositioning
 									</span>
-								</p>{" "}
+								</p>
+								<Link
+									href={"/contact"}
+									className="text-sm font-black items-center text-[#eeeeee] leading-[14.35px] w-[154px] h-[48px] flex justify-center bg-[#FF6600] mt-5 rounded-[6px]"
+								>
+									CONTACT US
+								</Link>
 							</div>
 						</AccordionContent>
 					</AccordionItem>
