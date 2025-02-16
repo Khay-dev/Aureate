@@ -80,60 +80,65 @@ const ServicePage: React.FC = () => {
 						</AccordionTrigger>
 						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
 							<div className="flex-col gap-y-5 flex  lg:w-[50%] md:w-[65%] w-full">
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Branding: (Logo Design, Identity Design, Brand Standards,
 										etc.)
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
-										Graphic Design: (Print Design: Brochures, flyers, posters,
-										business cards, etc)
+										Graphic Design: ( Brochures, flyers, posters, business
+										cards, etc)
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Digital Design: (Social media graphics, email newsletters,
 										etc.)
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Advertising Design: (Billboards, magazine ads, online ads,
 										etc)
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										UI/UX Design: (Wireframing, Prototyping, Mobile app design,
@@ -164,60 +169,65 @@ const ServicePage: React.FC = () => {
 						</AccordionTrigger>
 						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
 							<div className="flex-col gap-y-5 flex  lg:w-[50%] md:w-[65%] w-full">
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Custom Website Design: Personalized design, wireframing, and
 										user experience optimization
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										E-commerce Development: Product pages, shopping cart,
 										payment integration, customer management
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Website Redesign: Revamping outdated sites with modern
 										aesthetics and functionality
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Landing Page Design: One-page sites for specific campaigns
 										or products
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Maintenance & Support: Regular updates, security checks, and
@@ -248,59 +258,64 @@ const ServicePage: React.FC = () => {
 						</AccordionTrigger>
 						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
 							<div className="flex-col gap-y-5 flex  lg:w-[50%] md:w-[65%] w-full">
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Content Marketing: Blog posts, articles, and guides
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Email Marketing: Newsletter design, campaign management,
 										lead nurturing
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Paid Advertising: Google Ads, Social media ads (Facebook,
 										Instagram, LinkedIn, etc.) retargeting ads
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Influencer Marketing: Researching influencers, managing
 										collaborations, tracking campaign success
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Video Marketing: Video creation, YouTube channel
@@ -332,39 +347,43 @@ const ServicePage: React.FC = () => {
 						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
 							<div className="flex flex-col-reverse md:flex-row items-start justify-end md:gap-x-10 gap-y-5 lg:w-[50%] md:w-[65%] w-full ">
 								<div className="flex-col gap-y-5 flex">
-									<p className="inline-flex gap-x-3 items-center">
+									<p className="flex gap-x-3 items-center">
 										<Image
 											src={"/check.png"}
 											alt={"icon"}
 											width={30}
 											height={30}
+											className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 										/>
 										<span>Brand strategy</span>
 									</p>
-									<p className="inline-flex gap-x-3 items-center">
+									<p className="flex gap-x-3 items-center">
 										<Image
 											src={"/check.png"}
 											alt={"icon"}
 											width={30}
 											height={30}
+											className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 										/>
 										<span>Brand positioning</span>
 									</p>
-									<p className="inline-flex gap-x-3 items-center">
+									<p className="flex gap-x-3 items-center">
 										<Image
 											src={"/check.png"}
 											alt={"icon"}
 											width={30}
 											height={30}
+											className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 										/>
 										<span>Brand identity management</span>
 									</p>
-									<p className="inline-flex gap-x-3 items-center">
+									<p className="flex gap-x-3 items-center">
 										<Image
 											src={"/check.png"}
 											alt={"icon"}
 											width={30}
 											height={30}
+											className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 										/>
 										<span>Brand asset management</span>
 									</p>
@@ -376,39 +395,43 @@ const ServicePage: React.FC = () => {
 									</Link>
 								</div>
 								<div className="flex-col gap-y-5 flex">
-									<p className="inline-flex gap-x-3 items-center">
+									<p className="flex gap-x-3 items-center">
 										<Image
 											src={"/check.png"}
 											alt={"icon"}
 											width={30}
 											height={30}
+											className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 										/>
 										<span>Brand compliance</span>
 									</p>
-									<p className="inline-flex gap-x-3 items-center">
+									<p className="flex gap-x-3 items-center">
 										<Image
 											src={"/check.png"}
 											alt={"icon"}
 											width={30}
 											height={30}
+											className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 										/>
 										<span>Brand risk management</span>
 									</p>
-									<p className="inline-flex gap-x-3 items-center">
+									<p className="flex gap-x-3 items-center">
 										<Image
 											src={"/check.png"}
 											alt={"icon"}
 											width={30}
 											height={30}
+											className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 										/>
 										<span>Brand performance analysis</span>
 									</p>
-									<p className="inline-flex gap-x-3 items-center">
+									<p className="flex gap-x-3 items-center">
 										<Image
 											src={"/check.png"}
 											alt={"icon"}
 											width={30}
 											height={30}
+											className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 										/>
 										<span>Brand asset management</span>
 									</p>
@@ -431,60 +454,65 @@ const ServicePage: React.FC = () => {
 						</AccordionTrigger>
 						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
 							<div className="flex-col gap-y-5 flex  lg:w-[50%] md:w-[65%] w-full">
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Content Creation: Graphic design, reels, Video snippets,
 										Stories
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Community Management: Engaging with followers, responding to
 										comments, handling inquiries.
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Analytics & reporting: Tracking engagement, growth metrics,
 										and Sentiment.
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Social Media strategy development: Audience research,
 										content calendar planning.
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Social Media Advertising: Targeted ad campaigns on various
@@ -515,60 +543,65 @@ const ServicePage: React.FC = () => {
 						</AccordionTrigger>
 						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px]">
 							<div className="flex-col gap-y-5 flex  lg:w-[50%] md:w-[65%] w-full">
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Brand Identity Development: Logo design, typography, color
 										palette, brand voice
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Market Positioning: Competitive analysis, target audience
 										insights, positioning strategy
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Brand Guidelines: Document detailing logo usage, voice and
 										tone, style guidelines
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Content Strategy: Crafting messaging frameworks, content
 										pillars, storytelling techniques
 									</span>
 								</p>
-								<p className="inline-flex gap-x-3 items-center">
+								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
 										alt={"icon"}
 										width={30}
 										height={30}
+										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
 										Rebranding Services: Redesigning logos, updating brand
