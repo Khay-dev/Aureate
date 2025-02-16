@@ -1,4 +1,4 @@
-import type React from 'react';
+import type React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Epilogue } from "next/font/google";
@@ -35,6 +35,7 @@ const ContactPage: React.FC = () => {
 					<p className="font-bold text-2xl leading-8 text-[#391400] ">
 						Get In Touch
 					</p>
+					<Input placeholder="Full name" />
 					<Input placeholder="Your email" />
 					<Select>
 						<SelectTrigger>
@@ -62,13 +63,13 @@ const ContactPage: React.FC = () => {
 							</SelectGroup>
 						</SelectContent>
 					</Select>{" "}
-					<Textarea placeholder="Message" />
+					<Textarea placeholder=" A short brief about your project." />
 					<div className="w-full flex justify-end">
 						<Link
 							href={"/contact"}
 							className="text-sm font-black items-center text-[#eeeeee] leading-[14.35px] w-[154px] h-[48px] flex justify-center bg-[#FF6600] rounded-[6px]"
 						>
-							CONTACT US
+							SUBMIT
 						</Link>
 					</div>
 				</div>

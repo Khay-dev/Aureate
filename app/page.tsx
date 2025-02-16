@@ -1,3 +1,4 @@
+"use client";
 import { Input } from "@/components/ui/input";
 import {
 	Select,
@@ -12,11 +13,13 @@ import { Textarea } from "@/components/ui/textarea";
 import { Epilogue } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import { useRef } from "react";
 const epilogue = Epilogue({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function Home() {
+	const sectionRef = useRef<HTMLDivElement>(null);
 	return (
-		<main className={`${epilogue.className} mt-18 bg-[#FDF0E9]`}>
+		<main className={`${epilogue.className} mt-18 bg-[#FDF0E9] scroll-smooth`}>
 			{/* Hero Section */}
 			<section className="bg-[#28293E] text-white xl:min-h-screen md:min-h-[60vh] flex flex-col md:flex-row md:items-center justify-between items-start px-5 xl:px-[80px] md:px-[40px] xl:pt-24 md:pt-24 lg:pt-36 pt-[7rem] xl:pb-5 lg:pb-10 md:pb-5 w-full sm:px-2 gap-y-6">
 				<div className="basis-full md:basis-[50%] flex flex-col gap-y-8 ">
@@ -39,8 +42,12 @@ export default function Home() {
 					</p>
 					<div className="flex gap-x-8 items-center">
 						<Link
-							href={"/contact"}
-							className="text-sm font-black items-center text-[#eeeeee] uppercase  w-[138px] h-[48px] flex  justify-center bg-[#FF6600] rounded-[6px] "
+							href="#" // Prevents URL change
+							className="text-sm font-black items-center text-[#eeeeee] uppercase w-[138px] h-[48px] flex justify-center bg-[#FF6600] rounded-[6px] scroll-smooth"
+							onClick={(e) => {
+								e.preventDefault();
+								sectionRef.current?.scrollIntoView({ behavior: "smooth" });
+							}}
 						>
 							HOW WE WORK
 						</Link>
@@ -86,7 +93,7 @@ export default function Home() {
 						innovative, and authentic marketing solutions.
 					</p>
 					<Link
-						href={"/contact"}
+						href={"/about"}
 						className="text-sm font-black items-center text-[#391400] uppercase  w-[138px] h-[48px] flex  justify-center bg-white rounded-[6px] mt-5 "
 					>
 						SEE MORE
@@ -94,7 +101,11 @@ export default function Home() {
 				</div>
 			</section>
 			{/* How we work section */}
-			<section className="px-5 xl:px-[80px] md:px-[40px] py-[55px]">
+			<section
+				className="px-5 xl:px-[80px] md:px-[40px] py-[55px] scroll-mt-20"
+				id="how-we-work"
+				ref={sectionRef}
+			>
 				<p className="tracking-[3px] leading-8 font-normal text-base text-[#EF6D58] mb-9">
 					HOW WE WORK
 				</p>
@@ -181,6 +192,7 @@ export default function Home() {
 					<p className="font-bold text-2xl leading-8 text-[#391400] ">
 						Get In Touch
 					</p>
+					<Input placeholder="Full name" />
 					<Input placeholder="Your email" />
 					<Select>
 						<SelectTrigger>
@@ -208,13 +220,13 @@ export default function Home() {
 							</SelectGroup>
 						</SelectContent>
 					</Select>{" "}
-					<Textarea placeholder="Message" />
+					<Textarea placeholder=" A short brief about your project." />
 					<div className="w-full flex justify-end">
 						<Link
-							href={"/contact"}
+							href={""}
 							className="text-sm font-black items-center text-[#eeeeee] leading-[14.35px] w-[154px] h-[48px] flex justify-center bg-[#FF6600] rounded-[6px]"
 						>
-							CONTACT US
+							SUBMIT
 						</Link>
 					</div>
 				</div>
