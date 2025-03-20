@@ -13,52 +13,14 @@ const epilogue = Epilogue({ subsets: ["latin"], weight: ["400", "700"] });
 
 const ServicePage: React.FC = () => {
 	return (
-		<main className={`${epilogue.className} mt-18 bg-[#FDF0E9]`}>
-			{/* Hero Section */}
-			<section className="bg-[#28293E] text-white  flex flex-col items-center px-5 xl:px-[80px] md:px-[40px] xl:pt-[120px] md:pt-24 lg:pt-36 pt-[7rem] md:pb-16 pb-10 w-full sm:px-2 ">
-				<div className=" flex flex-col gap-y-5 items-center justify-center">
-					<p className="xl:text-[72px] lg:text-[60px] md:text-[55px] text-[40px] font-extrabold lg:leading-[80px] tracking-[-2px] text-white">
-						Our Services
-					</p>
-					<p className="text-base font-normal text-center leading-8 lg:w-[60%] md:w-[70%] w-full">
-						Agency provides a full service range including technical skills,
-						design, business understanding.
-					</p>
-				</div>
-			</section>
-			<section className="px-5 xl:px-[80px] md:px-[40px] py-[55px]">
-				<p className="tracking-[3px] leading-8 font-normal text-base text-[#EF6D58] mb-6">
-					SERVICES
-				</p>
-				<div className="flex flex-col md:flex-row items-start justify-between gap-y-8">
-					<div className="basis-full md:basis-[45%] flex flex-col gap-y-4 md:text-[30px] text-[32px] lg:text-[40px] leading-[40px] md:leading-[48px] font-black text-[#391400]">
-						Digital agency is a business you hire to outsource your digital
-						marketing efforts
-					</div>
-					<div className="text-[#391400A3] flex flex-col gap-y-5 basis-full md:basis-[50%] mt-5 md:mt-0">
-						<p className="font-normal tracking-normal leading-8  text-base">
-							Ability to put themselves in the merchant&apos;s shoes. It is
-							meant to partner on the long run, and work as an extension of the
-							merchant&apos;s team.
-						</p>
-
-						<p className="font-normal tracking-normal leading-8  text-base text-[#391400A3]">
-							{" "}
-							A digital agency is a business you hire to outsource your digital
-							marketing efforts, instead of handling in-house. They can provide
-							your business with a variety of digital solutions to promote your
-							product or service online and help you.
-						</p>
-					</div>
-				</div>
-			</section>
-			<section className="px-5 xl:px-[80px] md:px-[40px] py-[55px]">
+		<main className={`${epilogue.className} mt-18 bg-black`}>
+			<section className="px-5 xl:px-[50px] md:px-[30px] xl:pt-24 md:pt-28 lg:pt-40 pt-[7rem] pb-10 xl:pb-20 lg:pb-10 md:pb-10 ">
 				{" "}
 				<Accordion
 					type="single"
 					collapsible
 					defaultValue="item-1"
-					className="w-full text-[#391400]"
+					className="w-full text-white"
 				>
 					<AccordionItem value="item-1" className="py-5">
 						<AccordionTrigger>
@@ -78,8 +40,11 @@ const ServicePage: React.FC = () => {
 								</span>
 							</p>
 						</AccordionTrigger>
-						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
+						<AccordionContent className=" text-white flex justify-end py-[40px] ">
 							<div className="flex-col gap-y-5 flex  lg:w-[50%] md:w-[65%] w-full">
+								<p className="text-base font-normal leading-8">     Our graphic and motion design process involves understanding your project goals, target audience, and unique needs.
+									We develop customized design concept, creating visually stunning, effective designs that captures attention and conveys your message.
+									Our team delivers high-quality design files, optimized for various formats and platforms.</p>
 								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
@@ -167,8 +132,9 @@ const ServicePage: React.FC = () => {
 								</span>
 							</p>
 						</AccordionTrigger>
-						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
+						<AccordionContent className=" text-white flex justify-end py-[40px] ">
 							<div className="flex-col gap-y-5 flex  lg:w-[50%] md:w-[65%] w-full">
+								<p className="text-base font-normal leading-8">Our website development and optimization process begins with a thorough discovery phase to understand your business goals, target audience, and unique needs. We design and develop custom websites that are visually stunning, user-friendly, and optimized for search engines.</p>
 								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
@@ -256,8 +222,9 @@ const ServicePage: React.FC = () => {
 								</span>
 							</p>
 						</AccordionTrigger>
-						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
+						<AccordionContent className=" text-white flex justify-end py-[40px] ">
 							<div className="flex-col gap-y-5 flex  lg:w-[50%] md:w-[65%] w-full">
+								<p className="text-base font-normal leading-8">We&apos;ll help you make a lasting impression online. Our digital marketing services are designed to drive real results, from growing your social media presence and crafting compelling content, to boosting website traffic and sales through targeted advertising, email marketing, and SEO optimization.</p>
 								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
@@ -331,7 +298,7 @@ const ServicePage: React.FC = () => {
 							</div>
 						</AccordionContent>
 					</AccordionItem>
-					<AccordionItem value="item-4" className="py-5">
+					{/* <AccordionItem value="item-4" className="py-5">
 						<AccordionTrigger>
 							<p className="inline-flex items-center md:gap-x-7 gap-x-4">
 								<Image src={"/brand.png"} alt={"icon"} width={50} height={50} />
@@ -344,7 +311,7 @@ const ServicePage: React.FC = () => {
 								</span>
 							</p>
 						</AccordionTrigger>
-						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
+						<AccordionContent className=" text-white flex justify-end py-[40px] ">
 							<div className="flex flex-col-reverse md:flex-row items-start justify-end md:gap-x-10 gap-y-5 lg:w-[50%] md:w-[65%] w-full ">
 								<div className="flex-col gap-y-5 flex">
 									<p className="flex gap-x-3 items-center">
@@ -438,7 +405,7 @@ const ServicePage: React.FC = () => {
 								</div>
 							</div>
 						</AccordionContent>
-					</AccordionItem>
+					</AccordionItem> */}
 					<AccordionItem value="item-5" className="py-5">
 						<AccordionTrigger>
 							<p className="inline-flex items-center md:gap-x-7 gap-x-4">
@@ -452,8 +419,11 @@ const ServicePage: React.FC = () => {
 								</span>
 							</p>
 						</AccordionTrigger>
-						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px] ">
+						<AccordionContent className=" text-white flex justify-end py-[40px] ">
 							<div className="flex-col gap-y-5 flex  lg:w-[50%] md:w-[65%] w-full">
+								<p className="text-base font-normal leading-8">
+									Our team creates and curates engaging content, manages social media advertising, and monitors conversations to ensure your brand is always represented in the best possible light.
+								</p>
 								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
@@ -541,8 +511,12 @@ const ServicePage: React.FC = () => {
 								</span>
 							</p>
 						</AccordionTrigger>
-						<AccordionContent className=" text-[#391400A3] flex justify-end py-[40px]">
+						<AccordionContent className=" text-white flex justify-end py-[40px]">
 							<div className="flex-col gap-y-5 flex  lg:w-[50%] md:w-[65%] w-full">
+								<p className="text-base font-normal leading-8">
+									Our branding process begins with a deep dive into your business, identifying your unique value proposition, target audience, and industry landscape.
+									We develop a comprehensive brand strategy, crafting a unique brand identity, messaging framework, and visual system. Our team ensures consistency across all touchpoints, from business cards to website design.
+								</p>
 								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}

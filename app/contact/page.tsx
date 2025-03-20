@@ -18,15 +18,7 @@ const epilogue = Epilogue({ subsets: ["latin"], weight: ["400", "700"] });
 const ContactPage: React.FC = () => {
 	return (
 		<main className={`${epilogue.className} mt-18 bg-black`}>
-			{/* Hero Section */}
-			{/* <section className="bg-[#28293E] text-white  flex flex-col items-center px-5 xl:px-[80px] md:px-[40px] xl:pt-[120px] md:pt-24 lg:pt-36 pt-[7rem] md:pb-16 pb-10 w-full sm:px-2 ">
-				dhl
-			</section> */}
-
-
-
-
-			<section className=" text-white xl:min-h-screen md:min-h-[60vh] flex flex-col md:flex-row md:items-center justify-between items-start px-5 xl:px-[50px] md:px-[30px] xl:pt-24 md:pt-28 lg:pt-36 pt-[7rem] pb-10 xl:pb-20 lg:pb-10 md:pb-10 w-full gap-y-6 gap-x-6 ">
+			<section className=" text-white xl:min-h-screen md:min-h-[60vh] flex flex-col md:flex-row md:items-center justify-between items-start px-5 xl:px-[50px] md:px-[30px] xl:pt-28 md:pt-28 lg:pt-36 pt-[7rem] pb-10 xl:pb-20 lg:pb-10 md:pb-10 w-full gap-y-6 gap-x-6 ">
 				<div className="basis-full md:basis-[50%] flex flex-col gap-y-8 ">
 					<p className="xl:text-[62px] lg:text-[58px] md:text-[50px] text-[55px] font-extrabold lg:leading-[64px] md:leading-[60px] leading-[62px] tracking-[-2px] text-white">
 						Have an  <span className=" text-[#FF6600]">Idea?</span> <br />
