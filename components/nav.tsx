@@ -16,38 +16,29 @@ interface Menu {
 const epilogue = Epilogue({ subsets: ["latin"], weight: ["400", "700"] });
 
 const menu: Menu[] = [
-	{ title: "About", link: "/about" },
+	{ title: "About Us", link: "/about" },
 	{ title: "Services", link: "/services" },
 	{ title: "Contact", link: "/contact" },
 ];
 
 const Navbar = () => {
-	const [isMenuOpen, setIsMenuOpen] = useState(false);
-	const [isExiting, setIsExiting] = useState(false);
 	const pathname = usePathname(); // Get the current route
+	const [menuOpen, setMenuOpen] = useState(false);
 
 	const toggleMenu = () => {
-		setIsMenuOpen((prev) => !prev);
+		setMenuOpen(!menuOpen);
 	};
 
-	const handleClose = () => {
-		setIsExiting(true);
-		setTimeout(() => {
-			setIsMenuOpen(false);
-			setIsExiting(false);
-		}, 500);
-	};
 
 	return (
 		<header className="relative">
 			<div className={`${epilogue.className} bg-black  px-5 lg:px-[50px] md:px-[40px] py-4 fixed top-0 left-0 w-screen z-50`}>
 				<div className="flex justify-between items-center">
 					{/* Logo */}
-					{!isMenuOpen && (
-						<Link href="/" className="uppercase tracking-wider text-2xl font-medium">
-							<Image src={"/logo.png"} alt={"logo"} width={140} height={34} priority />
-						</Link>
-					)}
+
+					<Link href="/" className="uppercase tracking-wider text-2xl font-medium">
+						<Image src={"/logo.png"} alt={"logo"} width={140} height={34} priority />
+					</Link>
 
 					{/* Show nav only if NOT on the home page */}
 					{pathname !== "/" && (
@@ -88,29 +79,32 @@ const Navbar = () => {
 
 					{/* Burger Menu (Always Visible) */}
 					<div className="flex md:hidden">
-						<button type="button" onClick={toggleMenu}>
-							{isMenuOpen ? <HiX className="text-3xl text-white" /> : <HiOutlineMenuAlt4 className="text-3xl text-white" />}
+						<button type="button" onClick={toggleMenu} className="p-1 border rounded-md">
+							<HiOutlineMenuAlt4 className="text-2xl text-white" />
 						</button>
 					</div>
+
+					{/* Mobile Menu */}
+					<div
+						className={`fixed bg-black  top-0 right-0 min-h-[50vh] py-8 px-5 flex flex-col items-center md:hidden w-[70vw] z-40 gap-y-10 
+    transform transition-transform duration-500 ease-in-out 
+    ${menuOpen ? "translate-x-0  pointer-events-auto" : "translate-x-full pointer-events-none"}`}
+					>
+						{/* Close Button */}
+						<button type="button" onClick={toggleMenu} className="w-full flex justify-end ">
+							<HiX className="text-3xl text-white p-1 border rounded-md " />
+						</button>
+
+						{/* Menu Items */}
+						{menu.map((item) => (
+							<Link key={item.title} href={item.link} className="text-[30px]  font-extrabold text-white">
+								{item.title}
+							</Link>
+						))}
+					</div>
+
 				</div>
 			</div>
-
-			{/* Mobile Menu */}
-			{isMenuOpen && (
-				<div className={`${isExiting ? "animate-slideRight" : "animate-slideLeft"} fixed bg-[#28293E] top-[60px] h-screen py-8 px-5 flex flex-col items-end md:hidden w-full z-40`}>
-					{menu.map((item) => (
-						<Link key={item.title} href={item.link} className="text-[42px] uppercase font-medium text-white" onClick={() => setIsMenuOpen(false)}>
-							{item.title}
-						</Link>
-					))}
-					<Link href="/contact" className="text-[42px] uppercase font-medium text-white" onClick={() => setIsMenuOpen(false)}>
-						Contact
-					</Link>
-					<Link href="" className="uppercase text-base text-white mt-10" onClick={handleClose}>
-						Linkedin
-					</Link>
-				</div>
-			)}
 		</header>
 	);
 };

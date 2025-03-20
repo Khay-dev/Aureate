@@ -2,15 +2,16 @@
 import { Epilogue } from "next/font/google";
 import { FiArrowUpRight } from "react-icons/fi";
 import Link from "next/link"
+import Image from "next/image"
 const epilogue = Epilogue({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function Home() {
 	return (
 		<main className={`${epilogue.className} mt-18 bg-black scroll-smooth`}>
 			{/* Hero Section */}
-			<section className=" text-white xl:min-h-screen md:min-h-[60vh] flex flex-col md:flex-row md:items-center justify-between items-start px-5 xl:px-[50px] md:px-[40px] xl:pt-24 md:pt-24 lg:pt-36 pt-[7rem] xl:pb-20 lg:pb-10 md:pb-10 w-full gap-y-6 gap-x-6 ">
+			<section className=" text-white xl:min-h-screen md:min-h-[60vh] flex flex-col md:flex-row md:items-center justify-between items-start px-5 xl:px-[50px] md:px-[40px] xl:pt-24 md:pt-24 lg:pt-36 pt-[7rem] pb-10 xl:pb-20 lg:pb-10 md:pb-10 w-full gap-y-6 gap-x-6 ">
 				<div className="basis-full md:basis-[50%] flex flex-col gap-y-8 ">
-					<p className="xl:text-[80px] lg:text-[65px] md:text-[50px] text-[50px] font-extrabold lg:leading-[80px] md:leading-[60px] tracking-[-2px] text-white">
+					<p className="xl:text-[80px] lg:text-[65px] md:text-[50px] text-[50px] font-extrabold lg:leading-[80px] md:leading-[60px] leading-[65px] tracking-[-2px] text-white">
 						<span className="z-20 relative">
 							We <span className=" text-[#FF6600]">Empower</span> <br /> Brands To <br /> Reach New <br /> Heights!
 						</span>
@@ -18,9 +19,20 @@ export default function Home() {
 					<p className="text-[18px] font-normal leading-8 lg:w-[80%]  mx-auto md:mx-0">
 						Aureate Media delivers tailored marketing that drives real results, amplifies brand voices, and empowers businesses to reach new heights. Our bold, innovative, and authentic approach sets us apart from other marketing agencies.
 					</p>
+					<Link href={"/contact"} className=" leading-8 md:hidden text-sm font-black items-center text-[#eeeeee] uppercase w-[138px] h-[48px] flex justify-center bg-[#FF6600] rounded-[6px] scroll-smooth">
+						Contact Us
+					</Link>
 				</div>
 				<div className="basis-full md:basis-[50%] mt-10 md:mt-0 w-full">
-					<div className="grid lg:grid-cols-2 lg:grid-rows-2  border border-[#FF6600] w-full min-h-[700px] rounded-3xl">
+					<Image
+						src={"/home.png"}
+						alt={"hero"}
+						width={570}
+						height={600}
+						priority
+						className="aspect-[570/600] mx-auto md:mx-0 md:hidden block"
+					/>
+					<div className=" hidden md:grid lg:grid-cols-2 lg:grid-rows-2  border border-[#FF6600] w-full min-h-[700px] rounded-3xl">
 						<Link href={"/"} className="flex justify-between flex-col border-b lg:border-r border-[#FF6600] lg:bg-[url('/conicon.png')] bg-no-repeat bg-left bg-contain text-[30px] font-medium leading-8 p-6 group">
 							<div className="flex justify-end">
 								<FiArrowUpRight className="group-hover:rotate-45 transition-rotate duration-300" />
