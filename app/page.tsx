@@ -33,7 +33,7 @@ export default function Home() {
 						className="aspect-[570/600] mx-auto md:mx-0 md:hidden block"
 					/>
 					<div className=" hidden md:grid lg:grid-cols-2 lg:grid-rows-2  border border-[#FF6600] w-full min-h-[700px] rounded-3xl">
-						<Link href={"/"} className="flex justify-between flex-col border-b lg:border-r border-[#FF6600] lg:bg-[url('/conicon.png')] bg-no-repeat bg-left bg-contain text-[30px] font-medium leading-8 p-6 group">
+						<Link href={"/contact"} className="flex justify-between flex-col border-b lg:border-r border-[#FF6600] lg:bg-[url('/conicon.png')] bg-no-repeat bg-left bg-contain text-[30px] font-medium leading-8 p-6 group">
 							<div className="flex justify-end">
 								<FiArrowUpRight className="group-hover:rotate-45 transition-rotate duration-300" />
 							</div>

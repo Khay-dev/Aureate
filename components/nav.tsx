@@ -42,12 +42,13 @@ const Navbar = () => {
 
 					{/* Show nav only if NOT on the home page */}
 					{pathname !== "/" && (
-						<nav className="hidden md:flex items-center gap-x-28">
+						<nav className="hidden md:flex items-center lg:gap-x-16 xl:gap-x-28 md:gap-x-5">
 							{menu.map((item) => (
 								<div className="group relative" key={item.title}>
-									<Link href={item.link} className="text-base leading-[32px] text-white font-normal hover:border-b border-black transition-all duration-200 ease-in-out">
+									<Link href={item.link} className="text-base leading-[32px] text-white font-normal  transition-all duration-200 ease-in-out">
 										{item.title}
 									</Link>
+									<span className="absolute inset-x-0 bottom-0 h-[1px] scale-x-0 bg-white origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left" />
 								</div>
 							))}
 						</nav>
@@ -55,22 +56,22 @@ const Navbar = () => {
 
 					{/* Social Links */}
 					<ul className="md:flex gap-x-4 items-center hidden ">
-						<li className="h-[45px] w-[45px] rounded-full flex items-center justify-center bg-[#FF6600] text-white">
+						<li className="lg:h-[45px] lg:w-[45px] md:h-[35px] md:w-[35px] rounded-full flex items-center justify-center bg-[#FF6600] text-white">
 							<Link href="https://facebook.com">
 								<FaFacebookF />
 							</Link>
 						</li>
-						<li className="h-[45px] w-[45px] rounded-full flex items-center justify-center bg-[#FF6600] text-white">
+						<li className="lg:h-[45px] lg:w-[45px] md:h-[35px] md:w-[35px] rounded-full flex items-center justify-center bg-[#FF6600] text-white">
 							<Link href="https://linkedin.com">
 								<FaLinkedinIn />
 							</Link>
 						</li>
-						<li className="h-[45px] w-[45px] rounded-full flex items-center justify-center bg-[#FF6600] text-white">
+						<li className="lg:h-[45px] lg:w-[45px] md:h-[35px] md:w-[35px] rounded-full flex items-center justify-center bg-[#FF6600] text-white">
 							<Link href="https://twitter.com">
 								<BsTwitterX />
 							</Link>
 						</li>
-						<li className="h-[45px] w-[45px] rounded-full flex items-center justify-center bg-[#FF6600] text-white">
+						<li className="lg:h-[45px] lg:w-[45px] md:h-[35px] md:w-[35px] rounded-full flex items-center justify-center bg-[#FF6600] text-white">
 							<Link href="https://instagram.com">
 								<FaInstagram />
 							</Link>
