@@ -40,7 +40,7 @@ const Navbar = () => {
 
 	return (
 		<header className="relative">
-			<div className={`${epilogue.className} bg-[#28293E] px-5 lg:px-[80px] md:px-[40px] py-4 fixed top-0 left-0 w-screen z-50`}>
+			<div className={`${epilogue.className} bg-black  px-5 lg:px-[50px] md:px-[40px] py-4 fixed top-0 left-0 w-screen z-50`}>
 				<div className="flex justify-between items-center">
 					{/* Logo */}
 					{!isMenuOpen && (
