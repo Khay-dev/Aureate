@@ -29,7 +29,7 @@ const ContactPage: React.FC = () => {
 					</p>
 					<div className="flex flex-col gap-y-6">
 						<div className="inline-flex items-center gap-x-5">
-							<Image src={"/phone.png"} alt={"icon"} width={60} height={60} />
+							<Image src={"/whatsapp.png"} alt={"icon"} width={60} height={60} />
 							<Link
 								href="tel:+2348179196483"
 								className="hover:underline transition-all duration-300 ease-in-out w-fit "
