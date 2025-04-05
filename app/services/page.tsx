@@ -13,8 +13,8 @@ const epilogue = Epilogue({ subsets: ["latin"], weight: ["400", "700"] });
 
 const ServicePage: React.FC = () => {
 	return (
-		<main className={`${epilogue.className} mt-18 bg-black`}>
-			<section className="px-5 xl:px-[50px] md:px-[30px] xl:pt-24 md:pt-28 lg:pt-40 pt-[7rem] pb-10 xl:pb-20 lg:pb-10 md:pb-10 ">
+		<main className={`${epilogue.className} mt-18 bg-black container mx-auto `}>
+			<section className=" xl:px-[50px] md:px-[30px] xl:pt-24 md:pt-28 lg:pt-40 pt-[7rem] pb-10 xl:pb-20 lg:pb-10 md:pb-10  ">
 				{" "}
 				<Accordion
 					type="single"

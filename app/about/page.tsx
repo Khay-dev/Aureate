@@ -6,9 +6,9 @@ const epilogue = Epilogue({ subsets: ["latin"], weight: ["400", "700"] });
 
 const AboutPage: React.FC = () => {
 	return (
-		<main className={`${epilogue.className} mt-18 bg-black`}>
+		<main className={`${epilogue.className} mt-18 bg-black container mx-auto `}>
 			{/* Hero Section */}
-			<section className="text-white flex flex-col items-center px-5 xl:px-[80px] md:px-[40px] xl:pt-[120px] md:pt-24 lg:pt-36 pt-[7rem] md:pb-16 pb-10 w-full sm:px-2 ">
+			<section className="text-white flex flex-col items-center xl:px-[80px] md:px-[40px] xl:pt-[120px] md:pt-24 lg:pt-36 pt-[7rem] md:pb-16 pb-10 w-full ">
 				<div className=" flex gap-y-5 items-center justify-center text-center 
 				">
 					<p className="xl:text-[72px] lg:text-[60px] md:text-[55px] text-[40px] font-extrabold lg:leading-[80px] tracking-[-2px] text-white ">
@@ -17,7 +17,7 @@ const AboutPage: React.FC = () => {
 				</div>
 			</section>
 
-			<section className="px-5 xl:px-[80px] md:px-[40px] flex justify-center items-center w-full ">
+			<section className="px-3 xl:px-[80px] md:px-[40px] flex justify-center items-center w-full ">
 				<div className="flex flex-col gap-y-5 justify-center items-center lg:w-[55%] md:w-[85%] w-full text-white text-center">
 					<p>At Aureate Media, we empower brands to reach new heights by shouldering the weight of marketing, amplifying their brand voice, and driving brand momentum. Our vision is to forge a new standard in marketing excellence, one that is tailored to the unique needs of our clients. </p>
 

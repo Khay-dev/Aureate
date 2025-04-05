@@ -32,8 +32,8 @@ const Navbar = () => {
 
 	return (
 		<header className="relative">
-			<div className={`${epilogue.className} bg-black  px-5 lg:px-[50px] md:px-[40px] py-4 fixed top-0 left-0 w-screen z-50`}>
-				<div className="flex justify-between items-center">
+			<div className={`${epilogue.className} bg-black lg:px-[50px] md:px-[40px] py-5 fixed top-0 left-0 w-full z-50`}>
+				<div className="flex justify-between items-center container ">
 					{/* Logo */}
 
 					<Link href="/" className="uppercase tracking-wider text-2xl font-medium">
@@ -98,7 +98,11 @@ const Navbar = () => {
 
 						{/* Menu Items */}
 						{menu.map((item) => (
-							<Link key={item.title} href={item.link} className="text-[30px]  font-extrabold text-white">
+							<Link
+								key={item.title}
+								onClick={() => setMenuOpen(false)}
+								className="text-[30px] font-extrabold text-white"
+								href={item.link}							>
 								{item.title}
 							</Link>
 						))}

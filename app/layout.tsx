@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${epilogue.variable}  antialiased`}>
+			<body className={`${epilogue.variable}  antialiased bg-black`}>
 				<Navbar />
 				{children}
 				<Footer />

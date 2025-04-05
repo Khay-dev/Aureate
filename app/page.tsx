@@ -7,9 +7,9 @@ const epilogue = Epilogue({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function Home() {
 	return (
-		<main className={`${epilogue.className} mt-18 bg-black scroll-smooth`}>
+		<main className={`${epilogue.className} mt-18 bg-black scroll-smooth container mx-auto `}>
 			{/* Hero Section */}
-			<section className=" text-white xl:min-h-screen md:min-h-[60vh] flex flex-col md:flex-row md:items-center justify-between items-start px-5 xl:px-[50px] md:px-[40px] xl:pt-24 md:pt-24 lg:pt-36 pt-[7rem] pb-10 xl:pb-20 lg:pb-10 md:pb-10 w-full gap-y-6 gap-x-6 ">
+			<section className=" text-white xl:min-h-screen md:min-h-[60vh] flex flex-col md:flex-row md:items-center justify-between items-start  xl:px-[50px] md:px-[40px] xl:pt-24 md:pt-24 lg:pt-36 pt-[7rem] pb-10 xl:pb-20 lg:pb-10 md:pb-10 w-full gap-y-6 gap-x-6 ">
 				<div className="basis-full md:basis-[50%] flex flex-col gap-y-8 ">
 					<p className="xl:text-[80px] lg:text-[65px] md:text-[50px] text-[50px] font-extrabold lg:leading-[80px] md:leading-[60px] leading-[65px] tracking-[-2px] text-white">
 						<span className="z-20 relative">
@@ -68,38 +68,6 @@ export default function Home() {
 
 				</div>
 			</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
