@@ -31,13 +31,16 @@ const ContactPage: React.FC = () => {
 						<div className="inline-flex items-center gap-x-5">
 							<Image src={"/whatsapp.png"} alt={"icon"} width={60} height={60} />
 							<Link
-								href="tel:+2348179196483"
-								className="hover:underline transition-all duration-300 ease-in-out w-fit "
+								href="https://wa.me/2348179196483"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="hover:underline transition-all duration-300 ease-in-out w-fit"
 							>
-								<h3 className="text-[18px] leading-8 font-normal text-white ">
-									+234 817-919-6483{" "}
+								<h3 className="text-[18px] leading-8 font-normal text-white">
+									+234 817-919-6483
 								</h3>
 							</Link>
+
 						</div>
 
 					</div>
@@ -46,6 +49,7 @@ const ContactPage: React.FC = () => {
 							<Image src={"/email.png"} alt={"icon"} width={60} height={60} />
 							<Link
 								href="mailto:aureatemediahq@gmail.com"
+								rel="noopener noreferrer"
 								className="hover:underline transition-all duration-300 ease-in-out w-fit"
 							>
 								<h3 className="text-[18px] leading-8 font-normal text-white ">
