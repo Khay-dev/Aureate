@@ -1,6 +1,17 @@
 import type React from "react";
 import { Epilogue } from "next/font/google";
-import Image from "next/image";
+import type { EmblaOptionsType } from "embla-carousel";
+import Brands from "@/components/carousel";
+
+const OPTIONS: EmblaOptionsType = { loop: true }
+const SLIDES = [
+	"/brand1.png",
+	"/brand2.png",
+	"/brand3.png",
+	"/brand4.png",
+	"/brand5.png",
+	"/brand6.png",
+]
 
 const epilogue = Epilogue({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -29,20 +40,9 @@ const AboutPage: React.FC = () => {
 				</div>
 			</section>
 
-			<section className="px-5 xl:px-[80px] md:px-[40px] py-[55px] pb-10 flex flex-col md:flex-row items-center gap-5">
-				<div className="md:basis-[50%] basis-full">
-					<Image src={"/about1.png"} alt={"icon"} width={570} height={448} />
-				</div>
-				<div className="md:basis-[50%] basis-full md:flex flex-col gap-y-5 hidden">
-					<div className="flex flex-col md:flex-row justify-center items-center gap-5">
-						<Image src={"/about2.png"} alt={"icon"} width={270} height={208}  />
-						<Image src={"/about3.png"} alt={"icon"} width={270} height={208}  />
-					</div>
-					<div className="flex flex-col md:flex-row justify-center items-center gap-5">
-						<Image src={"/about4.png"} alt={"icon"} width={270} height={208}  />
-						<Image src={"/about5.png"} alt={"icon"} width={270} height={208}  />
-					</div>
-				</div>
+			<section className=" xl:px-[80px] md:px-[40px] py-[55px] pb-10 flex flex-col  items-center gap-8">
+				<p className="text-white md:text-[50px] text-[28px] text-center font-extrabold md:leading-[80px] leading-[64px]">These brands trust us!</p>
+				<Brands slides={SLIDES} options={OPTIONS} />
 			</section>
 
 

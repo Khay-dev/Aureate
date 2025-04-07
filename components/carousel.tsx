@@ -5,47 +5,54 @@ import type { EmblaOptionsType, EmblaCarouselType } from 'embla-carousel';
 import { PrevButton, NextButton, usePrevNextButtons } from "./carouselbuttons";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from 'embla-carousel-autoplay';
-
+import Image from 'next/image';
 
 type PropType = {
-  slides: number[]
-  options?: EmblaOptionsType
-}
+  slides: string[]; // Array of image URLs
+  options?: EmblaOptionsType;
+};
 
 const Brands: React.FC<PropType> = (props) => {
-  const { slides, options } = props
-  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()])
+  const { slides, options } = props;
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
 
   const onNavButtonClick = useCallback((emblaApi: EmblaCarouselType) => {
-    const autoplay = emblaApi?.plugins()?.autoplay
-    if (!autoplay) return
+    const autoplay = emblaApi?.plugins()?.autoplay;
+    if (!autoplay) return;
 
     const resetOrStop =
       autoplay.options.stopOnInteraction === false
         ? autoplay.reset
-        : autoplay.stop
+        : autoplay.stop;
 
-    resetOrStop()
-  }, [])
+    resetOrStop();
+  }, []);
 
   const {
     prevBtnDisabled,
     nextBtnDisabled,
     onPrevButtonClick,
-    onNextButtonClick
-  } = usePrevNextButtons(emblaApi, onNavButtonClick)
+    onNextButtonClick,
+  } = usePrevNextButtons(emblaApi, onNavButtonClick);
+
   return (
-    <section className="embla">
-      <div className=" overflow-hidden" ref={emblaRef}>
+    <section className="embla w-full flex items-center justify-center flex-col">
+      <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex touch-pan-y touch-pinch-zoom -ml-[1.5rem]">
-          {slides.map((index) => (
+          {slides.map((src, index) => (
             <div
-              className="transform-gpu flex-[0_0_100%] xl:flex-[0_0_33%] md:flex-[0_0_50%] md:min-w-0 xl:min-w-0 min-w-full pl-[1.5rem]"
+              className="transform-gpu flex-[0_0_100%]   md:min-w-0 xl:min-w-0 min-w-full pl-[1.5rem]  border-white flex justify-center items-center"
+              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
               key={index}
             >
-              <div className="border bg-white text-[4rem] font-semibold flex items-center justify-center h-[19rem] select-none border-[#EFEFEF] rounded-md">
-                Survey {index + 1}
-              </div>
+              <Image
+                src={src}
+                alt={`Brand ${index + 1}`}
+                width={550}
+                height={400}
+                priority
+                className="w-auto h-auto aspect-[550/400] rounded-md"
+              />
             </div>
           ))}
         </div>
