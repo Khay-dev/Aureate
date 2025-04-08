@@ -36,12 +36,12 @@ const Brands: React.FC<PropType> = (props) => {
   } = usePrevNextButtons(emblaApi, onNavButtonClick);
 
   return (
-    <section className="embla w-full flex items-center justify-center flex-col">
+    <section className="embla w-full flex items-end  justify-center flex-col">
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex touch-pan-y touch-pinch-zoom -ml-[1.5rem]">
           {slides.map((src, index) => (
             <div
-              className="transform-gpu flex-[0_0_100%]   md:min-w-0 xl:min-w-0 min-w-full pl-[1.5rem]  border-white flex justify-center items-center"
+              className="transform-gpu flex-[0_0_70%]  md:min-w-0 xl:min-w-0 min-w-full pl-[1.5rem] flex justify-center items-center"
               // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
               key={index}
             >
