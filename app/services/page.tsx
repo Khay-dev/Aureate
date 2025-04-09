@@ -32,7 +32,7 @@ const ServicePage: React.FC = () => {
 									height={50}
 								/>
 								<span
-									className="md:text-[40px] lg:text-[50px] text-[23px] md:leading-[64px] leading-8 font-extrabold w-fit"
+									className="md:text-[40px] text-[20px] md:leading-[64px] leading-8 font-extrabold w-fit"
 									title="Design Services"
 								>
 									{" "}
@@ -124,7 +124,7 @@ const ServicePage: React.FC = () => {
 							<p className="inline-flex items-center md:gap-x-7 gap-x-4">
 								<Image src={"/web.png"} alt={"icon"} width={50} height={50} />
 								<span
-									className="md:text-[40px] lg:text-[50px] text-[23px] md:leading-[64px] leading-8 font-extrabold w-fit"
+									className="md:text-[40px]  text-[20px] md:leading-[64px] leading-8 font-extrabold w-fit"
 									title="Website Development & Management"
 								>
 									{" "}
@@ -214,7 +214,7 @@ const ServicePage: React.FC = () => {
 							<p className="inline-flex items-center md:gap-x-7 gap-x-4">
 								<Image src={"/dig.png"} alt={"icon"} width={50} height={50} />
 								<span
-									className="md:text-[40px] lg:text-[50px] text-[23px] md:leading-[64px] leading-8 font-extrabold w-fit"
+									className="md:text-[40px] text-[20px] md:leading-[64px] leading-8 font-extrabold w-fit"
 									title="Digital Marketing"
 								>
 									{" "}
@@ -411,7 +411,7 @@ const ServicePage: React.FC = () => {
 							<p className="inline-flex items-center md:gap-x-7 gap-x-4">
 								<Image src={"/soc.png"} alt={"icon"} width={50} height={50} />
 								<span
-									className="md:text-[40px] lg:text-[50px] text-[23px] md:leading-[64px] leading-8 font-extrabold w-fit"
+									className="md:text-[40px]  text-[20px] md:leading-[64px] leading-8 font-extrabold w-fit"
 									title="Social Media Management"
 								>
 									{" "}
@@ -503,7 +503,7 @@ const ServicePage: React.FC = () => {
 							<p className="inline-flex items-center md:gap-x-7 gap-x-4">
 								<Image src={"/brass.png"} alt={"icon"} width={50} height={50} />
 								<span
-									className="md:text-[40px] lg:text-[50px] text-[23px] md:leading-[64px] leading-8 font-extrabold w-fit"
+									className="md:text-[40px] 9 text-[20px] md:leading-[64px] leading-8 font-extrabold w-fit"
 									title="Branding & Brand Strategy"
 								>
 									{" "}

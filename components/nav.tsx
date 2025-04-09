@@ -57,31 +57,23 @@ const Navbar = () => {
 					{/* Social Links */}
 					<ul className="md:flex gap-x-4 items-center hidden ">
 						<li className="lg:h-[45px] lg:w-[45px] md:h-[35px] md:w-[35px] rounded-full flex items-center justify-center bg-[#FF6600] text-white transition-all duration-300 hover:bg-[#FF944D] hover:-translate-y-1">
-							<Link href="https://facebook.com"
-								rel="noopener noreferrer"
-							>
+							<Link href={"https://www.facebook.com/share/1EDuWXtW23/?mibextid=wwXIfr"} rel="noopener noreferrer" target="_blank">
 								<FaFacebookF />
 							</Link>
 						</li>
 
 						<li className="lg:h-[45px] lg:w-[45px] md:h-[35px] md:w-[35px] rounded-full flex items-center justify-center bg-[#FF6600] text-white transition-all duration-300 hover:bg-[#FF944D] hover:-translate-y-1">
-							<Link href="https://linkedin.com"
-								rel="noopener noreferrer"
-							>
+							<Link href={"https://www.linkedin.com/company/aureatemedia/"} rel="noopener noreferrer" target="_blank">
 								<FaLinkedinIn />
 							</Link>
 						</li>
 						<li className="lg:h-[45px] lg:w-[45px] md:h-[35px] md:w-[35px] rounded-full flex items-center justify-center bg-[#FF6600] text-white transition-all duration-300 hover:bg-[#FF944D] hover:-translate-y-1">
-							<Link href="https://twitter.com"
-								rel="noopener noreferrer"
-							>
+							<Link href={"https://x.com/aureatemedia"} rel="noopener noreferrer" target="_blank">
 								<BsTwitterX />
 							</Link>
 						</li>
 						<li className="lg:h-[45px] lg:w-[45px] md:h-[35px] md:w-[35px] rounded-full flex items-center justify-center bg-[#FF6600] text-white transition-all duration-300 hover:bg-[#FF944D] hover:-translate-y-1">
-							<Link href="https://instagram.com"
-								rel="noopener noreferrer"
-							>
+							<Link href={"https://www.instagram.com/aureatemedia"} rel="noopener noreferrer" target="_blank">
 								<FaInstagram />
 							</Link>
 						</li>
