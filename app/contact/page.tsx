@@ -1,18 +1,9 @@
 import type React from "react";
 import Link from "next/link";
 import { Epilogue } from "next/font/google";
-import { Input } from "@/components/ui/input";
 import Image from "next/image"
-import {
-	Select,
-	SelectContent,
-	SelectGroup,
-	SelectItem,
-	SelectLabel,
-	SelectTrigger,
-	SelectValue,
-} from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
+import { ContactForm } from "./contactform";
+import { Toaster } from "@/components/ui/sonner"
 const epilogue = Epilogue({ subsets: ["latin"], weight: ["400", "700"] });
 
 const ContactPage: React.FC = () => {
@@ -61,54 +52,11 @@ const ContactPage: React.FC = () => {
 					</div>
 				</div>
 				<div className="basis-full md:basis-[45%] mt-10 md:mt-0 w-full">
-
-					<div className="bg-white md:p-5 lg:p-10 p-6 flex flex-col gap-y-5 justify-center h-[470px] ">
-						<p className="font-bold text-2xl leading-8 text-[#391400] ">
-							Get In Touch
-						</p>
-						<Input placeholder="Full name" />
-						<Input placeholder="Your email" />
-						<Select>
-							<SelectTrigger>
-								<SelectValue placeholder="Select a Service" />
-							</SelectTrigger>
-							<SelectContent>
-								<SelectGroup>
-									<SelectLabel>Our Services</SelectLabel>
-									<SelectItem value="digital-marketing">
-										Digital Marketing
-									</SelectItem>
-									<SelectItem value="design-services">Design Services</SelectItem>
-									<SelectItem value="brand-management">
-										Brand Management
-									</SelectItem>
-									<SelectItem value="social-media-management">
-										Social Media Management
-									</SelectItem>
-									<SelectItem value="branding-brand-strategy">
-										Branding & Brand Strategy
-									</SelectItem>
-									<SelectItem value="website-development-management">
-										Website development & Management
-									</SelectItem>
-								</SelectGroup>
-							</SelectContent>
-						</Select>{" "}
-						<Textarea placeholder=" A short brief about your project." />
-						<div className="w-full flex justify-end">
-							<Link
-								href={"/contact"}
-								className="text-sm font-black items-center text-[#eeeeee] leading-[14.35px] w-[154px] h-[48px] flex justify-center bg-[#FF6600] rounded-[6px]"
-							>
-								SUBMIT
-							</Link>
-						</div>
-					</div>
-
+					<ContactForm/>
 				</div>
 			</section>
 
-
+			<Toaster />
 		</main>
 	);
 };
