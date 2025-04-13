@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 		type: "website",
 		images: [
 			{
-				url: "/favicon.ico",
+				url: "/logo.png",
 				width: 600,
 				height: 500,
 				alt: "Aureate Media",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 		],
 	},
 	icons: {
-		icon: "/favicon.ico",
+		icon: "/logo.png",
 	},
 };
 
