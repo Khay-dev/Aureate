@@ -22,6 +22,21 @@ export const metadata: Metadata = {
 		"SEO",
 		"UI/UX Design",
 	],
+	robots: "index, follow",
+	openGraph: {
+		title: "Aureate Media",
+		description: "Our agency provides a plethora of services including Brand management, design, Social media marketing, SEO and more.",
+		url: "https://aureate-three.vercel.app/",
+		type: "website",
+		images: [
+			{
+				url: "/favicon.ico",
+				width: 600,
+				height: 500,
+				alt: "Aureate Media",
+			},
+		],
+	},
 	icons: {
 		icon: "/favicon.ico",
 	},
