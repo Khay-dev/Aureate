@@ -36,8 +36,15 @@ const Navbar = () => {
 				<div className="flex justify-between items-center container ">
 					{/* Logo */}
 
-					<Link href="/" className="uppercase tracking-wider text-2xl font-medium">
-						<Image src={"/logo.png"} alt={"logo"} width={140} height={34} priority />
+					<Link href="/" className="uppercase tracking-wider text-2xl font-medium flex items-center">
+						<Image
+							src={"/logo3.png"}
+							alt={"logo"}
+							width={130}
+							height={35}
+							priority
+							className="object-contain"
+						/>
 					</Link>
 
 					{/* Show nav only if NOT on the home page */}

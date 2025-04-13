@@ -61,7 +61,7 @@ export const PrevButton: React.FC<PropType> = (props) => {
 
   return (
     <button
-      className="appearance-none bg-white touch-manipulation inline-flex cursor-pointer border-0 p-0 m-0 shadow-inner w-[44px] h-[44px] z-10 rounded-full  items-center justify-center text-nano-secondary disabled:text-nano-lightSecondary embla__button--prev"
+      className="appearance-none bg-white touch-manipulation inline-flex cursor-pointer border-0 p-0 m-0 shadow-inner md:w-[44px] w-[40px] md:h-[44px] h-[40px] z-10 rounded-full  items-center justify-center text-nano-secondary disabled:text-nano-lightSecondary embla__button--prev"
       type="button"
       {...restProps}
     >
@@ -82,7 +82,7 @@ export const NextButton: React.FC<PropType> = (props) => {
 
   return (
     <button
-      className="appearance-none bg-white touch-manipulation inline-flex cursor-pointer border-0 p-0 m-0 shadow-inner w-[44px] h-[44px] z-10 rounded-full  items-center justify-center text-nano-secondary disabled:text-nano-lightSecondary embla__button--next"
+      className="appearance-none bg-white touch-manipulation inline-flex cursor-pointer border-0 p-0 m-0 shadow-inner md:w-[44px] w-[40px] md:h-[44px] h-[40px] z-10 rounded-full  items-center justify-center text-nano-secondary disabled:text-nano-lightSecondary embla__button--next"
       type="button"
       {...restProps}
     >

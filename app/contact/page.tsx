@@ -1,9 +1,9 @@
 import type React from "react";
 import Link from "next/link";
 import { Epilogue } from "next/font/google";
-import Image from "next/image"
 import { ContactForm } from "./contactform";
 import { Toaster } from "@/components/ui/sonner"
+import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
 const epilogue = Epilogue({ subsets: ["latin"], weight: ["400", "700"] });
 
 const ContactPage: React.FC = () => {
@@ -20,16 +20,17 @@ const ContactPage: React.FC = () => {
 					</p>
 					<div className="flex flex-col gap-y-6">
 						<div className="inline-flex items-center gap-x-5">
-							<Image src={"/whatsapp.png"} alt={"icon"} width={60} height={60} />
+							<div className="lg:h-[45px] lg:w-[45px] md:h-[35px] md:w-[35px] h-[45px] w-[45px] rounded-full flex items-center justify-center bg-[#FF6600] text-white transition-all duration-300 hover:bg-[#FF944D] hover:-translate-y-1">
+									<FaWhatsapp />
+							</div>
 							<Link
-								href="https://wa.me/2348179196483"
+								href="https://wa.me/+2349125132979"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="hover:underline transition-all duration-300 ease-in-out w-fit"
 							>
-								<h3 className="text-[18px] leading-8 font-normal text-white">
-									+234 817-919-6483
-								</h3>
+								<h3 className="md:text-base text-[13px] leading-8 font-normal text-white">
+									+234-912-513-2979								</h3>
 							</Link>
 
 						</div>
@@ -37,13 +38,15 @@ const ContactPage: React.FC = () => {
 					</div>
 					<div className="flex flex-col gap-y-6">
 						<div className="inline-flex items-center gap-x-5">
-							<Image src={"/email.png"} alt={"icon"} width={60} height={60} />
+							<div className="lg:h-[45px] lg:w-[45px] md:h-[35px] md:w-[35px] h-[45px] w-[45px] rounded-full flex items-center justify-center bg-[#FF6600] text-white transition-all duration-300 hover:bg-[#FF944D] hover:-translate-y-1">
+								<FaEnvelope />
+							</div>
 							<Link
 								href="mailto:aureatemediahq@gmail.com"
 								rel="noopener noreferrer"
 								className="hover:underline transition-all duration-300 ease-in-out w-fit"
 							>
-								<h3 className="text-[18px] leading-8 font-normal text-white ">
+								<h3 className="md:text-base text-[13px] leading-8 font-normal text-white ">
 									aureatemediahq@gmail.com
 								</h3>
 							</Link>
@@ -52,7 +55,7 @@ const ContactPage: React.FC = () => {
 					</div>
 				</div>
 				<div className="basis-full md:basis-[45%] mt-10 md:mt-0 w-full">
-					<ContactForm/>
+					<ContactForm />
 				</div>
 			</section>
 

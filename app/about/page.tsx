@@ -41,7 +41,7 @@ const AboutPage: React.FC = () => {
 			</section>
 
 			<section className=" xl:px-[80px] md:px-[40px] py-[55px] pb-10 flex flex-col  items-center gap-8">
-				<p className="text-white md:text-[50px] text-[28px] text-center font-extrabold md:leading-[80px] leading-[64px]">These brands trust us!</p>
+				<p className="text-white md:text-[50px] text-[30px] text-center font-extrabold md:leading-[80px] leading-[40px]">These brands trust us!</p>
 				<Brands slides={SLIDES} options={OPTIONS} />
 			</section>
 

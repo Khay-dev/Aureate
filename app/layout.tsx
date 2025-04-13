@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 		type: "website",
 		images: [
 			{
-				url: "https://aureate-three.vercel.app/logo2.svg",
+				url: "/favicon.ico",
 				width: 600,
 				height: 500,
 				alt: "Aureate Media",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 		],
 	},
 	icons: {
-		icon: "https://aureate-three.vercel.app/logo2.svg",
+		icon: "/favicon.ico",
 	},
 };
 
