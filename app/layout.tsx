@@ -22,6 +22,9 @@ export const metadata: Metadata = {
 		"SEO",
 		"UI/UX Design",
 	],
+	icons: {
+		icon: "/favicon.ico",
+	},
 };
 
 export default function RootLayout({
