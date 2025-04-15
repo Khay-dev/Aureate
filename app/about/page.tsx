@@ -32,10 +32,6 @@ const AboutPage: React.FC = () => {
 				<div className="flex flex-col gap-y-5 justify-center items-center lg:w-[55%] md:w-[85%] w-full text-white text-center">
 					<p>At Aureate Media, we empower brands to reach new heights by shouldering the weight of marketing, amplifying their brand voice, and driving brand momentum. Our vision is to forge a new standard in marketing excellence, one that is tailored to the unique needs of our clients. </p>
 
-					<p>	We believe in empowering small to medium-sized businesses, entrepreneurs, and established companies to reach new heights, whether that is scaling marketing efforts, establishing a strong brand presence, or expanding into new markets.
-					</p>
-
-
 					<p>	Our approach is built on a foundation of boldness, innovation, authenticity, empathy, and a relentless drive for results. We are not afraid to take risks, challenge the status quo, and push the boundaries of what&apos;s possible</p>
 				</div>
 			</section>

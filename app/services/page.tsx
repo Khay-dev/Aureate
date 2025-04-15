@@ -42,7 +42,7 @@ const ServicePage: React.FC = () => {
 						</AccordionTrigger>
 						<AccordionContent className=" text-white flex justify-end py-[40px] ">
 							<div className="flex-col gap-y-5 flex  lg:w-[50%] md:w-[65%] w-full">
-								<p className="text-base font-normal leading-8">     Our graphic and motion design process involves understanding your project goals, target audience, and unique needs.
+								<p className="text-base font-normal leading-8"> 
 									We develop customized design concept, creating visually stunning, effective designs that captures attention and conveys your message.
 									Our team delivers high-quality design files, optimized for various formats and platforms.</p>
 								<p className="flex gap-x-3 items-center">
@@ -54,8 +54,7 @@ const ServicePage: React.FC = () => {
 										className="md:h-[30px] md:w-[30px] h-[20px] w-[20px] flex-shrink-0"
 									/>
 									<span>
-										Branding: (Logo Design, Identity Design, Brand Standards,
-										etc.)
+										Motion Design (3D Graphics, 2D Graphics, Logo Animation, Explainer Videos, etc)
 									</span>
 								</p>
 								<p className="flex gap-x-3 items-center">
@@ -134,7 +133,7 @@ const ServicePage: React.FC = () => {
 						</AccordionTrigger>
 						<AccordionContent className=" text-white flex justify-end py-[40px] ">
 							<div className="flex-col gap-y-5 flex  lg:w-[50%] md:w-[65%] w-full">
-								<p className="text-base font-normal leading-8">Our website development and optimization process begins with a thorough discovery phase to understand your business goals, target audience, and unique needs. We design and develop custom websites that are visually stunning, user-friendly, and optimized for search engines.</p>
+								<p className="text-base font-normal leading-8"> We design and develop custom websites that are visually stunning, user-friendly, and optimized for search engines.</p>
 								<p className="flex gap-x-3 items-center">
 									<Image
 										src={"/check.png"}
@@ -514,8 +513,8 @@ const ServicePage: React.FC = () => {
 						<AccordionContent className=" text-white flex justify-end py-[40px]">
 							<div className="flex-col gap-y-5 flex  lg:w-[50%] md:w-[65%] w-full">
 								<p className="text-base font-normal leading-8">
-									Our branding process begins with a deep dive into your business, identifying your unique value proposition, target audience, and industry landscape.
-									We develop a comprehensive brand strategy, crafting a unique brand identity, messaging framework, and visual system. Our team ensures consistency across all touchpoints, from business cards to website design.
+									We develop a comprehensive brand strategy, crafting a unique brand identity, messaging framework, and visual system.
+									Our team ensures consistency across all touchpoints.
 								</p>
 								<p className="flex gap-x-3 items-center">
 									<Image

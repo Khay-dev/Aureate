@@ -47,7 +47,8 @@ export default function Home() {
 
 
 						</Link>
-						<Link href={"#"} className="flex justify-between flex-col lg:border-r border-[#FF6600] lg:bg-[url('/igicon.png')] bg-no-repeat bg-right bg-contain text-[30px] font-medium leading-8 p-6 group">
+						<Link href={"https://www.instagram.com/aureatemedia"} rel="noopener noreferrer" target="_blank" className="flex justify-between flex-col lg:border-r border-[#FF6600] lg:bg-[url('/igicon.png')] bg-no-repeat bg-right bg-contain text-[30px] font-medium leading-8 p-6 group">
+					
 
 							<div className="flex justify-end">
 								<FiArrowUpRight className="group-hover:rotate-45 transition-rotate duration-300" />

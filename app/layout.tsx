@@ -23,6 +23,7 @@ export const metadata: Metadata = {
 		"UI/UX Design",
 	],
 	robots: "index, follow",
+	metadataBase: new URL('https://aureate-three.vercel.app/'),
 	openGraph: {
 		title: "Aureate Media",
 		description: "Our agency provides a plethora of services including Brand management, design, Social media marketing, SEO and more.",
