@@ -11,7 +11,7 @@ const epilogue = Epilogue({
 
 export const metadata: Metadata = {
 	title: "Aureate Media",
-	description: "Our agency provides a plethora of services including Brand management, design, Social media marketing, SEO and more.",
+	description: "Our agency provides a plethora of services including Social Media Management, Website Developmentt, Branding, Design and many more.",
 	keywords: [
 		"Tech Agency",
 		"Branding",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 	metadataBase: new URL('https://aureate-three.vercel.app/'),
 	openGraph: {
 		title: "Aureate Media",
-		description: "Our agency provides a plethora of services including Brand management, design, Social media marketing, SEO and more.",
+		description: "Our agency provides a plethora of services including Social Media Management, Website Developmentt, Branding, Design and many more.",
 		url: "https://aureate-three.vercel.app/",
 		type: "website",
 		images: [
